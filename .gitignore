@@ -4,6 +4,8 @@ paper/*
 !paper/main.pdf
 !paper/references.bib
 !paper/system_diagram.tex
+!paper/uir_results.pdf
+!paper/uir_results.png
 
 # Secrets
 .env
