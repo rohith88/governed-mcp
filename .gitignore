@@ -1,0 +1,56 @@
+# Paper (not published with code)
+paper/
+
+# Secrets
+.env
+
+# Deployment scripts (environment-specific)
+setup_vastai.sh
+restart_vastai.sh
+
+# Generated outputs (reproducible from scripts)
+registry/tools.json
+analysis/tool_token_counts.csv
+analysis/tcr_results.csv
+analysis/tsa_results.csv
+analysis/adversarial_metrics.csv
+analysis/table1_tsa_n500.csv
+analysis/table2_tsa_by_difficulty.csv
+figures/
+proxy_audit.jsonl
+mock_server_invocations.jsonl
+
+# Old / intermediate result files (not used in paper)
+results/results.db
+results/results_v2.db
+results/results_v2.db-journal
+results/results_v3.db
+results/run_v2.log
+results/run_v3.log
+results/results_llama.db
+results/results_qwen.db
+results/results_mistral.db
+results/results_hermes.db
+results/toolbench_v1.db
+results/toolbench_v2.db
+results/toolbench_v3.db
+results/adv_deepseek.db
+results/adv_deepseek_prompted.db
+results/adv_deepseek_prompted.db-journal
+results/adv_haiku_prompted_smoke.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code settings
+.claude/
+
+# macOS
+.DS_Store

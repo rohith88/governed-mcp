@@ -1,0 +1,30 @@
+[
+  {
+    "name": "payments",
+    "description": "Payment processing, billing, invoicing, and financial transactions"
+  },
+  {
+    "name": "developer",
+    "description": "Code repositories, CI/CD pipelines, issue tracking, and developer tools"
+  },
+  {
+    "name": "messaging",
+    "description": "Chat, SMS, email, and push notification delivery"
+  },
+  {
+    "name": "crm",
+    "description": "Customer relationship management, support tickets, and contacts"
+  },
+  {
+    "name": "identity",
+    "description": "Authentication, authorization, user management, and access control"
+  },
+  {
+    "name": "analytics",
+    "description": "Event tracking, metrics, dashboards, and business intelligence"
+  },
+  {
+    "name": "storage",
+    "description": "File storage, document management, and object storage"
+  }
+]

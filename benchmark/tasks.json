@@ -1,0 +1,7502 @@
+[
+  {
+    "task_id": "STR_001",
+    "instruction": "Create a new file to organize the project's assets.",
+    "correct_tool": "gdrive_create_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_delete_file",
+      "docusign_send_envelope",
+      "jira_list_users"
+    ]
+  },
+  {
+    "task_id": "MSG_001",
+    "instruction": "Start a private message with the customer for a confidential conversation.",
+    "correct_tool": "slack_open_direct_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_set_user_status",
+      "twilio_list_conversation_participants",
+      "auth0_list_users"
+    ]
+  },
+  {
+    "task_id": "PAY_001",
+    "instruction": "The customer upgraded their plan \u2014 activate the subscription so service begins.",
+    "correct_tool": "paypal_activate_subscription",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_pay_invoice",
+      "stripe_archive_product",
+      "jira_update_version"
+    ]
+  },
+  {
+    "task_id": "DEV_001",
+    "instruction": "Clean up the project by deleting the attachment from a previous sprint.",
+    "correct_tool": "jira_delete_attachment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "jira_update_issue",
+      "github_remove_collaborator",
+      "hubspot_list_deals"
+    ]
+  },
+  {
+    "task_id": "CRM_001",
+    "instruction": "Remove the duplicate trigger that was created in error.",
+    "correct_tool": "zendesk_delete_trigger",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_add_user_to_group",
+      "hubspot_get_pipeline",
+      "s3_delete_lifecycle_policy"
+    ]
+  },
+  {
+    "task_id": "ANL_001",
+    "instruction": "Send updated profile traits for the user to the analytics platform.",
+    "correct_tool": "amplitude_identify_user",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_list_cohorts",
+      "mixpanel_list_cohorts",
+      "stripe_update_product"
+    ]
+  },
+  {
+    "task_id": "STR_002",
+    "instruction": "Delete the revision left over from the cancelled project.",
+    "correct_tool": "gdrive_delete_revision",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "gdrive_export_file",
+      "s3_list_objects",
+      "auth0_update_user"
+    ]
+  },
+  {
+    "task_id": "DEV_002",
+    "instruction": "A developer needs a new worklog to track the upcoming work.",
+    "correct_tool": "jira_create_worklog",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_start_sprint",
+      "github_get_workflow_run",
+      "twilio_list_subaccounts"
+    ]
+  },
+  {
+    "task_id": "DEV_003",
+    "instruction": "Browse the branches to find the one causing the build failure.",
+    "correct_tool": "github_list_branches",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_submit_review",
+      "jira_list_boards",
+      "airtable_list_bases"
+    ]
+  },
+  {
+    "task_id": "DEV_004",
+    "instruction": "The team needs a team to get the feature started.",
+    "correct_tool": "github_create_team",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_list_releases",
+      "jira_add_comment",
+      "slack_list_files"
+    ]
+  },
+  {
+    "task_id": "DEV_005",
+    "instruction": "Clean up the project by deleting the release from a previous sprint.",
+    "correct_tool": "github_delete_release",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_list_collaborators",
+      "jira_get_board",
+      "notion_list_blocks"
+    ]
+  },
+  {
+    "task_id": "MSG_002",
+    "instruction": "Remove the message that was sent with incorrect information.",
+    "correct_tool": "slack_delete_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "slack_remove_reaction",
+      "twilio_delete_conversation",
+      "jira_list_comments"
+    ]
+  },
+  {
+    "task_id": "DEV_006",
+    "instruction": "Clean up the project by deleting the project from a previous sprint.",
+    "correct_tool": "jira_delete_project",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "jira_create_version",
+      "github_remove_team_member",
+      "stripe_create_payment_intent"
+    ]
+  },
+  {
+    "task_id": "PAY_002",
+    "instruction": "The customer is asking about their plan \u2014 fetch the record.",
+    "correct_tool": "paypal_get_plan",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_cancel_invoice",
+      "stripe_create_subscription",
+      "zendesk_create_trigger"
+    ]
+  },
+  {
+    "task_id": "CRM_002",
+    "instruction": "Consolidate the contacts to create a single source of truth.",
+    "correct_tool": "hubspot_merge_contacts",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_update_deal",
+      "zendesk_list_views",
+      "sendgrid_add_contacts_to_list"
+    ]
+  },
+  {
+    "task_id": "PAY_003",
+    "instruction": "Retrieve the charge details to verify the transaction status.",
+    "correct_tool": "stripe_get_charge",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_charges",
+      "paypal_deactivate_plan",
+      "s3_enable_encryption"
+    ]
+  },
+  {
+    "task_id": "PAY_004",
+    "instruction": "Retrieve the customer details to verify the transaction status.",
+    "correct_tool": "stripe_get_customer",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_capture_order",
+      "sendgrid_get_stats"
+    ]
+  },
+  {
+    "task_id": "DEV_007",
+    "instruction": "Combine the code review request after all CI checks pass.",
+    "correct_tool": "github_merge_pull_request",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_transfer_repo",
+      "jira_update_project",
+      "notion_update_page"
+    ]
+  },
+  {
+    "task_id": "DEV_008",
+    "instruction": "Retrieve the user to prepare the release notes.",
+    "correct_tool": "jira_get_user",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_get_project",
+      "github_delete_team",
+      "slack_add_reaction"
+    ]
+  },
+  {
+    "task_id": "DEV_009",
+    "instruction": "Create a sprint as part of the sprint planning process.",
+    "correct_tool": "jira_create_sprint",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_get_issue",
+      "github_create_repo",
+      "sendgrid_delete_list"
+    ]
+  },
+  {
+    "task_id": "MSG_003",
+    "instruction": "Delete the template to clean up the conversation history.",
+    "correct_tool": "sendgrid_delete_template",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "sendgrid_list_api_keys",
+      "twilio_get_account",
+      "s3_create_bucket"
+    ]
+  },
+  {
+    "task_id": "MSG_004",
+    "instruction": "Retrieve the email click metrics to check its delivery and open status.",
+    "correct_tool": "sendgrid_get_click_stats",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_add_contacts_to_list",
+      "slack_list_reminders",
+      "amplitude_get_project_info"
+    ]
+  },
+  {
+    "task_id": "STR_003",
+    "instruction": "Show the tables to find the document the client requested.",
+    "correct_tool": "airtable_list_tables",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_update_table",
+      "s3_create_bucket",
+      "twilio_create_flow"
+    ]
+  },
+  {
+    "task_id": "PAY_005",
+    "instruction": "Pull up the balance before issuing the refund.",
+    "correct_tool": "stripe_get_balance",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_update_subscription",
+      "paypal_confirm_order",
+      "gdrive_download_file"
+    ]
+  },
+  {
+    "task_id": "STR_004",
+    "instruction": "Pull the object for the compliance audit trail.",
+    "correct_tool": "s3_get_object",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_list_buckets",
+      "gdrive_delete_folder",
+      "amplitude_get_cohort"
+    ]
+  },
+  {
+    "task_id": "STR_005",
+    "instruction": "Browse the pages to locate the latest version of the report.",
+    "correct_tool": "notion_list_pages",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_archive_page",
+      "gdrive_list_revisions",
+      "auth0_list_clients"
+    ]
+  },
+  {
+    "task_id": "PAY_006",
+    "instruction": "Show every products associated with this account.",
+    "correct_tool": "stripe_list_products",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_cancel_payment_intent",
+      "paypal_list_plans",
+      "slack_delete_reminder"
+    ]
+  },
+  {
+    "task_id": "CRM_003",
+    "instruction": "A sales rep just finished a call \u2014 log the new organization in the system.",
+    "correct_tool": "zendesk_create_organization",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_get_view",
+      "hubspot_list_contacts",
+      "s3_list_object_versions"
+    ]
+  },
+  {
+    "task_id": "PAY_007",
+    "instruction": "Initiate a customer as part of the checkout workflow.",
+    "correct_tool": "stripe_create_customer",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_get_plan",
+      "auth0_list_organizations"
+    ]
+  },
+  {
+    "task_id": "MSG_005",
+    "instruction": "Look up the user profile for the audit trail.",
+    "correct_tool": "slack_get_user_profile",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_create_reminder",
+      "twilio_cancel_call",
+      "amplitude_track_event"
+    ]
+  },
+  {
+    "task_id": "MSG_006",
+    "instruction": "Create a API credential for the new support queue.",
+    "correct_tool": "sendgrid_create_api_key",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_get_click_stats",
+      "slack_delete_reminder",
+      "docusign_get_status"
+    ]
+  },
+  {
+    "task_id": "DEV_010",
+    "instruction": "Browse the starred to find the one causing the build failure.",
+    "correct_tool": "github_list_starred",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_user",
+      "jira_update_comment",
+      "s3_delete_object"
+    ]
+  },
+  {
+    "task_id": "CRM_004",
+    "instruction": "Pull the list of contacts for the quarterly business review.",
+    "correct_tool": "hubspot_list_contacts",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_update_deal",
+      "zendesk_search_users",
+      "airtable_create_table"
+    ]
+  },
+  {
+    "task_id": "IDN_001",
+    "instruction": "The user changed roles \u2014 update the user to reflect their new permissions.",
+    "correct_tool": "auth0_update_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_delete_client",
+      "gdrive_update_permission",
+      "gdrive_get_revision"
+    ]
+  },
+  {
+    "task_id": "PAY_008",
+    "instruction": "Pull up the order before issuing the refund.",
+    "correct_tool": "paypal_get_order",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_suspend_subscription",
+      "stripe_update_subscription",
+      "sendgrid_list_contacts"
+    ]
+  },
+  {
+    "task_id": "DEV_011",
+    "instruction": "Clean up the project by deleting the comment from a previous sprint.",
+    "correct_tool": "jira_delete_comment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "jira_list_issues",
+      "github_remove_collaborator",
+      "twilio_get_conversation"
+    ]
+  },
+  {
+    "task_id": "STR_006",
+    "instruction": "Send the envelope to the signatories so they can complete it.",
+    "correct_tool": "docusign_send_envelope",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_list_recipients",
+      "notion_update_block",
+      "jira_list_sprints"
+    ]
+  },
+  {
+    "task_id": "PAY_009",
+    "instruction": "Remove the test coupon created during QA.",
+    "correct_tool": "stripe_delete_coupon",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_get_customer",
+      "paypal_confirm_order",
+      "slack_share_file"
+    ]
+  },
+  {
+    "task_id": "PAY_010",
+    "instruction": "Pull up the invoice before issuing the refund.",
+    "correct_tool": "stripe_get_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_get_balance",
+      "paypal_confirm_order",
+      "notion_get_page"
+    ]
+  },
+  {
+    "task_id": "STR_007",
+    "instruction": "Share the file with the external partner for their review.",
+    "correct_tool": "gdrive_share_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_create_file",
+      "s3_get_public_access_block",
+      "slack_list_reminders"
+    ]
+  },
+  {
+    "task_id": "PAY_011",
+    "instruction": "The order was flagged as fraudulent; cancel the subscription before it settles.",
+    "correct_tool": "paypal_cancel_subscription",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "paypal_list_plans",
+      "stripe_get_refund",
+      "zendesk_list_groups"
+    ]
+  },
+  {
+    "task_id": "CRM_005",
+    "instruction": "Show all users so the sales team can prioritize outreach.",
+    "correct_tool": "zendesk_list_users",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_update_user",
+      "hubspot_list_activities",
+      "sendgrid_get_template"
+    ]
+  },
+  {
+    "task_id": "MSG_007",
+    "instruction": "Notify the team member by sending a sms.",
+    "correct_tool": "twilio_send_sms",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_list_subaccounts",
+      "sendgrid_create_contact",
+      "gdrive_list_trash"
+    ]
+  },
+  {
+    "task_id": "DEV_012",
+    "instruction": "A developer needs a new project to track the upcoming work.",
+    "correct_tool": "jira_create_project",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_update_version",
+      "github_get_issue",
+      "auth0_unblock_user"
+    ]
+  },
+  {
+    "task_id": "DEV_013",
+    "instruction": "Search the issues for the error pattern reported by the customer.",
+    "correct_tool": "jira_search_issues",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_create_board",
+      "github_close_pull_request",
+      "s3_list_object_versions"
+    ]
+  },
+  {
+    "task_id": "MSG_008",
+    "instruction": "Move the inactive channel to the archive.",
+    "correct_tool": "slack_archive_channel",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_open_direct_message",
+      "twilio_list_calls",
+      "auth0_delete_client"
+    ]
+  },
+  {
+    "task_id": "CRM_006",
+    "instruction": "Retrieve the contact to review the account history.",
+    "correct_tool": "hubspot_get_contact",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_log_call",
+      "zendesk_remove_user_from_group",
+      "s3_set_versioning"
+    ]
+  },
+  {
+    "task_id": "DEV_014",
+    "instruction": "List the commits to triage and prioritize incoming work.",
+    "correct_tool": "github_list_commits",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_workflow_run",
+      "jira_get_project",
+      "twilio_get_call"
+    ]
+  },
+  {
+    "task_id": "ANL_002",
+    "instruction": "Fetch the user segment results to share with the product team.",
+    "correct_tool": "amplitude_get_cohort",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_list_exports",
+      "mixpanel_track_event",
+      "slack_delete_file"
+    ]
+  },
+  {
+    "task_id": "DEV_015",
+    "instruction": "Close the development cycle by completing the sprint.",
+    "correct_tool": "jira_complete_sprint",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_add_attachment",
+      "github_list_webhooks",
+      "slack_delete_message"
+    ]
+  },
+  {
+    "task_id": "DEV_016",
+    "instruction": "Combine the branches after all CI checks pass.",
+    "correct_tool": "github_merge_branches",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_list_starred",
+      "jira_add_comment",
+      "gdrive_export_file"
+    ]
+  },
+  {
+    "task_id": "DEV_017",
+    "instruction": "Fetch the user to review its current state before the stand-up.",
+    "correct_tool": "github_get_user",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_list_starred",
+      "jira_list_boards",
+      "amplitude_create_annotation"
+    ]
+  },
+  {
+    "task_id": "IDN_002",
+    "instruction": "Pull the users to check for any stale accounts.",
+    "correct_tool": "auth0_list_users",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_user",
+      "stripe_list_coupons",
+      "hubspot_log_email"
+    ]
+  },
+  {
+    "task_id": "IDN_003",
+    "instruction": "Set up a user so the contractor can access the required systems.",
+    "correct_tool": "auth0_create_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_assign_role",
+      "s3_put_bucket_policy",
+      "twilio_delete_message"
+    ]
+  },
+  {
+    "task_id": "CRM_007",
+    "instruction": "A sales rep just finished a call \u2014 log the new webhook in the system.",
+    "correct_tool": "zendesk_create_webhook",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_delete_ticket",
+      "hubspot_get_company",
+      "slack_get_user"
+    ]
+  },
+  {
+    "task_id": "STR_008",
+    "instruction": "Browse the blocks to locate the latest version of the report.",
+    "correct_tool": "notion_list_blocks",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_get_page",
+      "s3_list_object_versions",
+      "jira_list_boards"
+    ]
+  },
+  {
+    "task_id": "MSG_009",
+    "instruction": "React with a contacts to list to signal the team that work is complete.",
+    "correct_tool": "sendgrid_add_contacts_to_list",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_create_list",
+      "slack_delete_file",
+      "airtable_delete_record"
+    ]
+  },
+  {
+    "task_id": "STR_009",
+    "instruction": "Browse the users to locate the latest version of the report.",
+    "correct_tool": "notion_list_users",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_archive_page",
+      "gdrive_export_file",
+      "twilio_cancel_call"
+    ]
+  },
+  {
+    "task_id": "PAY_012",
+    "instruction": "Remove the test webhook created during QA.",
+    "correct_tool": "stripe_delete_webhook",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_create_payout",
+      "paypal_list_plans",
+      "github_update_issue"
+    ]
+  },
+  {
+    "task_id": "PAY_013",
+    "instruction": "The order is confirmed; create a invoice to collect the funds.",
+    "correct_tool": "paypal_create_invoice",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_send_invoice",
+      "stripe_delete_coupon",
+      "github_list_releases"
+    ]
+  },
+  {
+    "task_id": "STR_010",
+    "instruction": "Pull the file metadata for the compliance audit trail.",
+    "correct_tool": "s3_get_object_metadata",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_create_bucket",
+      "gdrive_update_file",
+      "github_add_collaborator"
+    ]
+  },
+  {
+    "task_id": "MSG_010",
+    "instruction": "Remove the reminder that was sent with incorrect information.",
+    "correct_tool": "slack_delete_reminder",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "slack_list_reminders",
+      "sendgrid_send_bulk_email",
+      "amplitude_get_cohort"
+    ]
+  },
+  {
+    "task_id": "CRM_008",
+    "instruction": "A sales rep just finished a call \u2014 log the new ticket in the system.",
+    "correct_tool": "zendesk_create_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_search_users",
+      "hubspot_list_contacts",
+      "twilio_list_phone_numbers"
+    ]
+  },
+  {
+    "task_id": "STR_011",
+    "instruction": "Empty the trash to reclaim storage space before deleting it.",
+    "correct_tool": "gdrive_empty_trash",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_list_comments",
+      "airtable_update_record",
+      "twilio_list_calls"
+    ]
+  },
+  {
+    "task_id": "STR_012",
+    "instruction": "Edit the table to reflect the latest approved changes.",
+    "correct_tool": "airtable_update_table",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_update_field",
+      "notion_search",
+      "github_delete_repo"
+    ]
+  },
+  {
+    "task_id": "MSG_011",
+    "instruction": "Post a message to the team channel with the deployment update.",
+    "correct_tool": "slack_post_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_create_reminder",
+      "sendgrid_list_contacts",
+      "jira_list_projects"
+    ]
+  },
+  {
+    "task_id": "CRM_009",
+    "instruction": "Update the pipeline with the new information gathered on the call.",
+    "correct_tool": "hubspot_update_pipeline",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_close_deal",
+      "zendesk_get_ticket",
+      "jira_list_projects"
+    ]
+  },
+  {
+    "task_id": "CRM_010",
+    "instruction": "Find the users for the customer who called the support line.",
+    "correct_tool": "zendesk_search_users",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_update_macro",
+      "hubspot_update_pipeline",
+      "notion_list_pages"
+    ]
+  },
+  {
+    "task_id": "PAY_014",
+    "instruction": "The goods have shipped \u2014 capture the payment transaction to collect the funds.",
+    "correct_tool": "stripe_capture_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_list_payment_intents",
+      "paypal_create_subscription",
+      "gdrive_empty_trash"
+    ]
+  },
+  {
+    "task_id": "DEV_018",
+    "instruction": "A team member needs the issue details to continue their work.",
+    "correct_tool": "jira_get_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_transition_issue",
+      "github_add_collaborator",
+      "docusign_list_envelopes"
+    ]
+  },
+  {
+    "task_id": "STR_013",
+    "instruction": "Permanently delete the sensitive block after it has been archived.",
+    "correct_tool": "notion_delete_block",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "notion_update_database",
+      "docusign_get_document",
+      "amplitude_export_events"
+    ]
+  },
+  {
+    "task_id": "MSG_012",
+    "instruction": "Set up a new conversation for the project team to collaborate.",
+    "correct_tool": "twilio_create_conversation",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_release_phone_number",
+      "sendgrid_update_template",
+      "zendesk_list_webhooks"
+    ]
+  },
+  {
+    "task_id": "MSG_013",
+    "instruction": "Delete the list to clean up the conversation history.",
+    "correct_tool": "sendgrid_delete_list",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "sendgrid_create_template",
+      "twilio_get_message",
+      "gdrive_update_file"
+    ]
+  },
+  {
+    "task_id": "CRM_011",
+    "instruction": "Pull the list of groups for the quarterly business review.",
+    "correct_tool": "zendesk_list_groups",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_create_ticket",
+      "hubspot_create_pipeline",
+      "sendgrid_get_template"
+    ]
+  },
+  {
+    "task_id": "IDN_004",
+    "instruction": "Set up a client so the contractor can access the required systems.",
+    "correct_tool": "auth0_create_client",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_block_user",
+      "sendgrid_delete_contact",
+      "slack_get_permalink"
+    ]
+  },
+  {
+    "task_id": "MSG_014",
+    "instruction": "React with a reaction to signal the team that work is complete.",
+    "correct_tool": "slack_add_reaction",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_unpin_message",
+      "sendgrid_delete_contact",
+      "zendesk_create_trigger"
+    ]
+  },
+  {
+    "task_id": "MSG_015",
+    "instruction": "Show all reactions to review recent communications.",
+    "correct_tool": "slack_list_reactions",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_list_pins",
+      "twilio_create_conversation",
+      "gdrive_copy_file"
+    ]
+  },
+  {
+    "task_id": "ANL_003",
+    "instruction": "Fetch the conversion funnel results to share with the product team.",
+    "correct_tool": "mixpanel_get_funnel",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_query_insights",
+      "amplitude_query_api",
+      "zendesk_update_user"
+    ]
+  },
+  {
+    "task_id": "DEV_019",
+    "instruction": "Show the diff between commits to review the delta.",
+    "correct_tool": "github_compare_commits",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_list_workflows",
+      "jira_list_attachments",
+      "s3_delete_bucket"
+    ]
+  },
+  {
+    "task_id": "CRM_012",
+    "instruction": "List all active tickets for the account manager's pipeline.",
+    "correct_tool": "zendesk_list_tickets",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_create_organization",
+      "hubspot_delete_company",
+      "github_list_collaborators"
+    ]
+  },
+  {
+    "task_id": "MSG_016",
+    "instruction": "Remove the file that was sent with incorrect information.",
+    "correct_tool": "slack_delete_file",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "slack_archive_channel",
+      "twilio_cancel_call",
+      "github_delete_file"
+    ]
+  },
+  {
+    "task_id": "IDN_005",
+    "instruction": "Revoke the role now that the project has ended.",
+    "correct_tool": "auth0_remove_role",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_send_verification_email",
+      "jira_update_worklog",
+      "stripe_get_subscription"
+    ]
+  },
+  {
+    "task_id": "IDN_006",
+    "instruction": "Remove the user as part of the offboarding checklist.",
+    "correct_tool": "auth0_delete_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_list_connections",
+      "github_merge_branches",
+      "twilio_add_conversation_participant"
+    ]
+  },
+  {
+    "task_id": "STR_014",
+    "instruction": "Query the database to retrieve the specific records the team needs.",
+    "correct_tool": "notion_query_database",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_delete_block",
+      "airtable_update_table",
+      "jira_list_worklogs"
+    ]
+  },
+  {
+    "task_id": "CRM_013",
+    "instruction": "Create a pipeline to start tracking this customer relationship.",
+    "correct_tool": "hubspot_create_pipeline",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_get_pipeline",
+      "zendesk_get_satisfaction_rating",
+      "gdrive_remove_from_starred"
+    ]
+  },
+  {
+    "task_id": "DEV_020",
+    "instruction": "Add branch protection rules to the branch before the release.",
+    "correct_tool": "github_protect_branch",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_create_release",
+      "jira_create_issue",
+      "auth0_get_stats"
+    ]
+  },
+  {
+    "task_id": "PAY_015",
+    "instruction": "Generate a report of all customers for the current billing period.",
+    "correct_tool": "stripe_list_customers",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_payment_intents",
+      "paypal_create_invoice",
+      "notion_update_block"
+    ]
+  },
+  {
+    "task_id": "PAY_016",
+    "instruction": "Modify the payment transaction to apply the latest pricing adjustment.",
+    "correct_tool": "stripe_update_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_capture_charge",
+      "paypal_list_plans",
+      "airtable_list_views"
+    ]
+  },
+  {
+    "task_id": "IDN_007",
+    "instruction": "The employee has left the company \u2014 delete the organization to revoke access.",
+    "correct_tool": "auth0_delete_organization",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_get_organization",
+      "hubspot_log_call",
+      "amplitude_list_charts"
+    ]
+  },
+  {
+    "task_id": "DEV_021",
+    "instruction": "The contractor's contract ended \u2014 remove the collaborator.",
+    "correct_tool": "github_remove_collaborator",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_add_label",
+      "jira_get_issue",
+      "stripe_create_payout"
+    ]
+  },
+  {
+    "task_id": "CRM_014",
+    "instruction": "Take the user from group out of the group as they no longer need access.",
+    "correct_tool": "zendesk_remove_user_from_group",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_delete_user",
+      "hubspot_search_companies",
+      "gdrive_reply_to_comment"
+    ]
+  },
+  {
+    "task_id": "IDN_008",
+    "instruction": "List all organizations for the access review \u2014 flag any over-privileged accounts.",
+    "correct_tool": "auth0_list_organizations",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_list_clients",
+      "mixpanel_list_events",
+      "zendesk_create_webhook"
+    ]
+  },
+  {
+    "task_id": "STR_015",
+    "instruction": "Browse the comments to locate the latest version of the report.",
+    "correct_tool": "gdrive_list_comments",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_list_permissions",
+      "docusign_send_from_template",
+      "jira_list_users"
+    ]
+  },
+  {
+    "task_id": "ANL_004",
+    "instruction": "List existing annotations to find the one for this campaign.",
+    "correct_tool": "amplitude_list_annotations",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_query_api",
+      "mixpanel_create_dashboard",
+      "jira_list_attachments"
+    ]
+  },
+  {
+    "task_id": "MSG_017",
+    "instruction": "List the files to find the one sent to the customer.",
+    "correct_tool": "slack_list_files",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_unpin_message",
+      "twilio_modify_call",
+      "github_search_repos"
+    ]
+  },
+  {
+    "task_id": "CRM_015",
+    "instruction": "Pull the satisfaction score details before the sales meeting.",
+    "correct_tool": "zendesk_get_satisfaction_rating",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_search_users",
+      "hubspot_create_company",
+      "paypal_cancel_invoice"
+    ]
+  },
+  {
+    "task_id": "CRM_016",
+    "instruction": "Mark the task as done after the follow-up call.",
+    "correct_tool": "hubspot_complete_task",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_delete_company",
+      "zendesk_add_comment",
+      "notion_search"
+    ]
+  },
+  {
+    "task_id": "PAY_017",
+    "instruction": "Generate a report of all invoices for the current billing period.",
+    "correct_tool": "stripe_list_invoices",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_search_customers",
+      "paypal_show_refund",
+      "airtable_update_table"
+    ]
+  },
+  {
+    "task_id": "PAY_018",
+    "instruction": "Show every webhooks associated with this account.",
+    "correct_tool": "paypal_list_webhooks",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_send_invoice",
+      "stripe_list_balance_transactions",
+      "mixpanel_list_cohorts"
+    ]
+  },
+  {
+    "task_id": "ANL_005",
+    "instruction": "List existing exports to find the one for this campaign.",
+    "correct_tool": "amplitude_list_exports",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_identify_user",
+      "mixpanel_create_funnel",
+      "jira_get_comment"
+    ]
+  },
+  {
+    "task_id": "CRM_017",
+    "instruction": "Search for the tickets associated with this email address.",
+    "correct_tool": "zendesk_search_tickets",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_create_macro",
+      "hubspot_search_contacts",
+      "jira_list_comments"
+    ]
+  },
+  {
+    "task_id": "MSG_018",
+    "instruction": "Show all templates to review recent communications.",
+    "correct_tool": "sendgrid_list_templates",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_create_api_key",
+      "slack_archive_channel",
+      "github_star_repo"
+    ]
+  },
+  {
+    "task_id": "STR_016",
+    "instruction": "Put the storage lifecycle rule into cloud storage so the deployment pipeline can access it.",
+    "correct_tool": "s3_put_lifecycle_policy",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_create_bucket",
+      "docusign_add_recipient",
+      "jira_transition_issue"
+    ]
+  },
+  {
+    "task_id": "DEV_022",
+    "instruction": "A team member needs the commit details to continue their work.",
+    "correct_tool": "github_get_commit",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_update_file",
+      "jira_delete_worklog",
+      "paypal_create_order"
+    ]
+  },
+  {
+    "task_id": "MSG_019",
+    "instruction": "Show all reminders to review recent communications.",
+    "correct_tool": "slack_list_reminders",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_share_file",
+      "sendgrid_create_api_key",
+      "hubspot_get_deal"
+    ]
+  },
+  {
+    "task_id": "MSG_020",
+    "instruction": "List the channels to find the one sent to the customer.",
+    "correct_tool": "slack_list_channels",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_upload_file",
+      "twilio_send_sms",
+      "github_list_commits"
+    ]
+  },
+  {
+    "task_id": "MSG_021",
+    "instruction": "Add a conversation participant to acknowledge the key message in the thread.",
+    "correct_tool": "twilio_add_conversation_participant",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_modify_call",
+      "sendgrid_send_email",
+      "paypal_show_refund"
+    ]
+  },
+  {
+    "task_id": "MSG_022",
+    "instruction": "Cancel the call that was dialled to the wrong number.",
+    "correct_tool": "twilio_cancel_call",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "twilio_get_conversation",
+      "sendgrid_send_bulk_email",
+      "stripe_list_products"
+    ]
+  },
+  {
+    "task_id": "MSG_023",
+    "instruction": "Adjust the call to route it to the correct support agent.",
+    "correct_tool": "twilio_modify_call",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_make_call",
+      "slack_invite_to_channel",
+      "docusign_list_envelopes"
+    ]
+  },
+  {
+    "task_id": "CRM_018",
+    "instruction": "Retrieve the view to review the account history.",
+    "correct_tool": "zendesk_get_view",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_get_organization",
+      "hubspot_update_contact",
+      "github_remove_collaborator"
+    ]
+  },
+  {
+    "task_id": "MSG_024",
+    "instruction": "Release the phone number that is no longer in use.",
+    "correct_tool": "twilio_release_phone_number",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_send_whatsapp",
+      "sendgrid_create_api_key",
+      "zendesk_create_group"
+    ]
+  },
+  {
+    "task_id": "STR_017",
+    "instruction": "Pull the revision for the compliance audit trail.",
+    "correct_tool": "gdrive_get_revision",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_create_comment",
+      "airtable_delete_record",
+      "amplitude_list_charts"
+    ]
+  },
+  {
+    "task_id": "ANL_006",
+    "instruction": "Retrieve the project info for the board presentation.",
+    "correct_tool": "mixpanel_get_project_info",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_get_cohort",
+      "amplitude_export_events",
+      "docusign_list_templates"
+    ]
+  },
+  {
+    "task_id": "DEV_023",
+    "instruction": "Clean up the project by deleting the repo from a previous sprint.",
+    "correct_tool": "github_delete_repo",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_create_review",
+      "jira_update_version",
+      "hubspot_create_deal"
+    ]
+  },
+  {
+    "task_id": "ANL_007",
+    "instruction": "List existing conversion funnels to find the one for this campaign.",
+    "correct_tool": "mixpanel_list_funnels",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_dashboards",
+      "amplitude_get_project_info",
+      "stripe_list_refunds"
+    ]
+  },
+  {
+    "task_id": "DEV_024",
+    "instruction": "The engineering manager wants to see all teams for this sprint.",
+    "correct_tool": "github_list_teams",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_delete_webhook",
+      "jira_create_project",
+      "gdrive_create_folder"
+    ]
+  },
+  {
+    "task_id": "ANL_008",
+    "instruction": "Export the events to share with the data science team for modelling.",
+    "correct_tool": "amplitude_export_events",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_list_charts",
+      "mixpanel_create_annotation",
+      "stripe_delete_coupon"
+    ]
+  },
+  {
+    "task_id": "ANL_009",
+    "instruction": "Update the user profile with the revised cohort definition.",
+    "correct_tool": "mixpanel_update_user_profile",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "mixpanel_get_retention",
+      "amplitude_group_identify",
+      "zendesk_update_organization"
+    ]
+  },
+  {
+    "task_id": "CRM_019",
+    "instruction": "Search for the companies associated with this email address.",
+    "correct_tool": "hubspot_search_companies",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_search_contacts",
+      "zendesk_create_ticket",
+      "slack_delete_reminder"
+    ]
+  },
+  {
+    "task_id": "PAY_019",
+    "instruction": "Initiate a price as part of the checkout workflow.",
+    "correct_tool": "stripe_create_price",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_get_balance",
+      "paypal_get_subscription",
+      "hubspot_delete_deal"
+    ]
+  },
+  {
+    "task_id": "MSG_025",
+    "instruction": "List the conversations to find the one sent to the customer.",
+    "correct_tool": "twilio_list_conversations",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_messages",
+      "slack_get_user_profile",
+      "jira_search_issues"
+    ]
+  },
+  {
+    "task_id": "PAY_020",
+    "instruction": "Pull all plans for the auditor's review.",
+    "correct_tool": "paypal_list_plans",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_create_webhook",
+      "stripe_get_refund",
+      "github_create_release"
+    ]
+  },
+  {
+    "task_id": "DEV_025",
+    "instruction": "A team member needs the issue details to continue their work.",
+    "correct_tool": "github_get_issue",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_pull_request",
+      "jira_update_version",
+      "notion_create_database"
+    ]
+  },
+  {
+    "task_id": "IDN_009",
+    "instruction": "The employee has left the company \u2014 delete the client to revoke access.",
+    "correct_tool": "auth0_delete_client",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_get_logs",
+      "paypal_show_refund",
+      "zendesk_search_users"
+    ]
+  },
+  {
+    "task_id": "DEV_026",
+    "instruction": "List the comments to triage and prioritize incoming work.",
+    "correct_tool": "jira_list_comments",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_get_comment",
+      "github_star_repo",
+      "twilio_delete_message"
+    ]
+  },
+  {
+    "task_id": "CRM_020",
+    "instruction": "A sales rep just finished a call \u2014 log the new group in the system.",
+    "correct_tool": "zendesk_create_group",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_tickets",
+      "hubspot_get_contact",
+      "github_create_repo"
+    ]
+  },
+  {
+    "task_id": "MSG_026",
+    "instruction": "Deliver the email with the user's access credentials.",
+    "correct_tool": "sendgrid_send_email",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_list_api_keys",
+      "twilio_list_conversation_participants",
+      "docusign_create_template"
+    ]
+  },
+  {
+    "task_id": "PAY_021",
+    "instruction": "The customer is asking about their invoice \u2014 fetch the record.",
+    "correct_tool": "paypal_get_invoice",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_deactivate_plan",
+      "stripe_create_customer",
+      "hubspot_update_deal"
+    ]
+  },
+  {
+    "task_id": "DEV_027",
+    "instruction": "Show all open sprints so the team can plan capacity.",
+    "correct_tool": "jira_list_sprints",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_add_attachment",
+      "github_create_pull_request",
+      "auth0_list_clients"
+    ]
+  },
+  {
+    "task_id": "DEV_028",
+    "instruction": "Pull up the branch to investigate the reported regression.",
+    "correct_tool": "github_get_branch",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_assign_issue",
+      "jira_search_issues",
+      "amplitude_get_funnel_analysis"
+    ]
+  },
+  {
+    "task_id": "STR_018",
+    "instruction": "Rename the file to conform to the new naming convention.",
+    "correct_tool": "gdrive_rename_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_share_file",
+      "s3_get_object",
+      "hubspot_delete_contact"
+    ]
+  },
+  {
+    "task_id": "DEV_029",
+    "instruction": "Retrieve the comment to prepare the release notes.",
+    "correct_tool": "jira_get_comment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_get_issue",
+      "github_transfer_repo",
+      "sendgrid_delete_template"
+    ]
+  },
+  {
+    "task_id": "DEV_030",
+    "instruction": "A developer needs a new webhook to track the upcoming work.",
+    "correct_tool": "github_create_webhook",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_list_teams",
+      "jira_list_projects",
+      "amplitude_group_identify"
+    ]
+  },
+  {
+    "task_id": "ANL_010",
+    "instruction": "Build a new conversion funnel to monitor the key product metric this quarter.",
+    "correct_tool": "mixpanel_create_funnel",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "mixpanel_list_funnels",
+      "amplitude_export_events",
+      "zendesk_delete_ticket"
+    ]
+  },
+  {
+    "task_id": "DEV_031",
+    "instruction": "Revise the version after the team discussion.",
+    "correct_tool": "jira_update_version",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_delete_attachment",
+      "github_star_repo",
+      "twilio_list_phone_numbers"
+    ]
+  },
+  {
+    "task_id": "STR_019",
+    "instruction": "Retrieve the storage access policy to share it with a stakeholder.",
+    "correct_tool": "s3_get_bucket_policy",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_put_lifecycle_policy",
+      "airtable_list_views",
+      "stripe_list_balance_transactions"
+    ]
+  },
+  {
+    "task_id": "MSG_027",
+    "instruction": "Look up the template for the audit trail.",
+    "correct_tool": "sendgrid_get_template",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_create_list",
+      "slack_list_reminders",
+      "jira_delete_attachment"
+    ]
+  },
+  {
+    "task_id": "PAY_022",
+    "instruction": "Confirm the payment transaction after verifying all payment details.",
+    "correct_tool": "stripe_confirm_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_authorize_order",
+      "jira_get_sprint"
+    ]
+  },
+  {
+    "task_id": "PAY_023",
+    "instruction": "Re-activate the subscription that was previously paused.",
+    "correct_tool": "stripe_resume_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_send_invoice",
+      "paypal_activate_subscription",
+      "hubspot_get_pipeline"
+    ]
+  },
+  {
+    "task_id": "DEV_032",
+    "instruction": "Show all open issues so the team can plan capacity.",
+    "correct_tool": "jira_list_issues",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_add_attachment",
+      "github_add_team_member",
+      "s3_set_cors_policy"
+    ]
+  },
+  {
+    "task_id": "CRM_021",
+    "instruction": "Assign the ticket to the account executive for follow-up.",
+    "correct_tool": "zendesk_assign_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_get_view",
+      "hubspot_update_contact",
+      "jira_start_sprint"
+    ]
+  },
+  {
+    "task_id": "PAY_024",
+    "instruction": "Permanently delete the webhook that was created by mistake.",
+    "correct_tool": "paypal_delete_webhook",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "paypal_get_invoice",
+      "stripe_create_customer",
+      "s3_list_objects"
+    ]
+  },
+  {
+    "task_id": "ANL_011",
+    "instruction": "Set up a user segment to track performance against the OKR.",
+    "correct_tool": "mixpanel_create_cohort",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "mixpanel_create_dashboard",
+      "amplitude_get_funnel_analysis",
+      "stripe_create_payment_intent"
+    ]
+  },
+  {
+    "task_id": "CRM_022",
+    "instruction": "Add a deal from the latest marketing campaign lead.",
+    "correct_tool": "hubspot_create_deal",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_list_pipelines",
+      "zendesk_remove_user_from_group",
+      "twilio_delete_message"
+    ]
+  },
+  {
+    "task_id": "STR_020",
+    "instruction": "Browse the recipients to locate the latest version of the report.",
+    "correct_tool": "docusign_list_recipients",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_create_envelope",
+      "gdrive_delete_revision",
+      "zendesk_delete_ticket"
+    ]
+  },
+  {
+    "task_id": "STR_021",
+    "instruction": "Upload the storage access policy to the designated storage location.",
+    "correct_tool": "s3_put_bucket_policy",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_enable_encryption",
+      "airtable_update_record",
+      "mixpanel_list_dashboards"
+    ]
+  },
+  {
+    "task_id": "DEV_033",
+    "instruction": "Fetch the project to review its current state before the stand-up.",
+    "correct_tool": "jira_get_project",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_create_project",
+      "github_create_pull_request",
+      "mixpanel_delete_user_profile"
+    ]
+  },
+  {
+    "task_id": "STR_022",
+    "instruction": "Handle the envelope operation as required.",
+    "correct_tool": "docusign_void_envelope",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "docusign_download_completed",
+      "notion_update_page",
+      "sendgrid_create_list"
+    ]
+  },
+  {
+    "task_id": "PAY_025",
+    "instruction": "Enable the plan so the customer can start using premium features.",
+    "correct_tool": "paypal_activate_plan",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_authorize_order",
+      "stripe_get_payment_intent",
+      "amplitude_list_annotations"
+    ]
+  },
+  {
+    "task_id": "DEV_034",
+    "instruction": "Search the users for the error pattern reported by the customer.",
+    "correct_tool": "jira_search_users",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_update_comment",
+      "github_close_pull_request",
+      "mixpanel_get_cohort"
+    ]
+  },
+  {
+    "task_id": "DEV_035",
+    "instruction": "The team is stale and no longer needed \u2014 remove it.",
+    "correct_tool": "github_delete_team",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_list_releases",
+      "jira_add_attachment",
+      "stripe_create_payout"
+    ]
+  },
+  {
+    "task_id": "DEV_036",
+    "instruction": "Requirements changed \u2014 update the issue to reflect the new scope.",
+    "correct_tool": "jira_update_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_add_comment",
+      "github_assign_issue",
+      "paypal_send_invoice"
+    ]
+  },
+  {
+    "task_id": "ANL_012",
+    "instruction": "Retrieve the user segmentation report for the board presentation.",
+    "correct_tool": "mixpanel_get_segmentation",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_get_funnel",
+      "amplitude_export_events",
+      "auth0_create_organization"
+    ]
+  },
+  {
+    "task_id": "STR_023",
+    "instruction": "Fetch the block to review its contents before the meeting.",
+    "correct_tool": "notion_get_block",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_create_comment",
+      "airtable_list_records",
+      "sendgrid_send_email"
+    ]
+  },
+  {
+    "task_id": "IDN_010",
+    "instruction": "Unblock the user now that the false-positive alert has been resolved.",
+    "correct_tool": "auth0_unblock_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_list_organizations",
+      "github_delete_file",
+      "twilio_send_sms"
+    ]
+  },
+  {
+    "task_id": "STR_024",
+    "instruction": "Delete the comment left over from the cancelled project.",
+    "correct_tool": "gdrive_delete_comment",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "gdrive_delete_file",
+      "s3_put_lifecycle_policy",
+      "github_list_pull_requests"
+    ]
+  },
+  {
+    "task_id": "DEV_037",
+    "instruction": "A team member needs the sprint details to continue their work.",
+    "correct_tool": "jira_get_sprint",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_list_issues",
+      "github_create_pull_request",
+      "docusign_list_envelopes"
+    ]
+  },
+  {
+    "task_id": "DEV_038",
+    "instruction": "Cut the version for the scheduled deployment window.",
+    "correct_tool": "jira_release_version",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_list_sprints",
+      "github_list_starred",
+      "docusign_list_templates"
+    ]
+  },
+  {
+    "task_id": "IDN_011",
+    "instruction": "Fetch the logs to investigate the failed login attempt.",
+    "correct_tool": "auth0_get_logs",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_update_client",
+      "notion_list_comments",
+      "stripe_get_payment_intent"
+    ]
+  },
+  {
+    "task_id": "DEV_039",
+    "instruction": "Clean up the project by deleting the issue from a previous sprint.",
+    "correct_tool": "jira_delete_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "jira_complete_sprint",
+      "github_remove_team_member",
+      "amplitude_export_events"
+    ]
+  },
+  {
+    "task_id": "CRM_023",
+    "instruction": "Log a comment after the team discussion about this account.",
+    "correct_tool": "zendesk_add_comment",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_merge_tickets",
+      "hubspot_get_deal",
+      "auth0_get_role"
+    ]
+  },
+  {
+    "task_id": "STR_025",
+    "instruction": "Edit the page to reflect the latest approved changes.",
+    "correct_tool": "notion_update_page",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_delete_block",
+      "airtable_update_field",
+      "zendesk_update_organization"
+    ]
+  },
+  {
+    "task_id": "MSG_028",
+    "instruction": "Create a reminder for the new support queue.",
+    "correct_tool": "slack_create_reminder",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_get_user",
+      "twilio_modify_call",
+      "jira_get_sprint"
+    ]
+  },
+  {
+    "task_id": "MSG_029",
+    "instruction": "Show all calls to review recent communications.",
+    "correct_tool": "twilio_list_calls",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_get_flow",
+      "slack_upload_file",
+      "mixpanel_list_events"
+    ]
+  },
+  {
+    "task_id": "CRM_024",
+    "instruction": "Delete the deal for the churned account.",
+    "correct_tool": "hubspot_delete_deal",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "hubspot_create_company",
+      "zendesk_update_macro",
+      "stripe_finalize_invoice"
+    ]
+  },
+  {
+    "task_id": "PAY_026",
+    "instruction": "Put the subscription on hold at the customer's request.",
+    "correct_tool": "stripe_pause_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_payouts",
+      "paypal_deactivate_plan",
+      "notion_get_page"
+    ]
+  },
+  {
+    "task_id": "STR_026",
+    "instruction": "Find the resource matching the search criteria.",
+    "correct_tool": "notion_search",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_delete_block",
+      "gdrive_create_comment",
+      "twilio_create_flow"
+    ]
+  },
+  {
+    "task_id": "PAY_027",
+    "instruction": "A customer is ready to pay \u2014 set up a new invoice to begin the transaction.",
+    "correct_tool": "stripe_create_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_get_customer",
+      "paypal_get_plan",
+      "mixpanel_create_cohort"
+    ]
+  },
+  {
+    "task_id": "DEV_040",
+    "instruction": "Clean up the project by deleting the webhook from a previous sprint.",
+    "correct_tool": "github_delete_webhook",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_search_repos",
+      "jira_assign_issue",
+      "hubspot_create_task"
+    ]
+  },
+  {
+    "task_id": "STR_027",
+    "instruction": "Update the block with the revised content from the team.",
+    "correct_tool": "notion_update_block",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_create_comment",
+      "s3_list_object_versions",
+      "stripe_create_customer"
+    ]
+  },
+  {
+    "task_id": "STR_028",
+    "instruction": "Show the buckets to find the document the client requested.",
+    "correct_tool": "s3_list_buckets",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_list_objects",
+      "airtable_update_table",
+      "hubspot_get_pipeline"
+    ]
+  },
+  {
+    "task_id": "CRM_025",
+    "instruction": "A sales rep just finished a call \u2014 log the new view in the system.",
+    "correct_tool": "zendesk_create_view",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_tickets",
+      "hubspot_update_deal",
+      "s3_get_bucket_policy"
+    ]
+  },
+  {
+    "task_id": "IDN_012",
+    "instruction": "Find the users to reset their access credentials.",
+    "correct_tool": "auth0_search_users",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_create_connection",
+      "hubspot_create_deal",
+      "mixpanel_create_dashboard"
+    ]
+  },
+  {
+    "task_id": "IDN_013",
+    "instruction": "Retrieve the assigned roles details for the quarterly security audit.",
+    "correct_tool": "auth0_get_user_roles",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_search_users",
+      "airtable_update_field",
+      "jira_add_attachment"
+    ]
+  },
+  {
+    "task_id": "DEV_041",
+    "instruction": "Advance the issue from 'In Progress' to 'In Review'.",
+    "correct_tool": "jira_transition_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_list_sprints",
+      "github_create_file",
+      "airtable_bulk_update_records"
+    ]
+  },
+  {
+    "task_id": "MSG_030",
+    "instruction": "Notify the team member by sending a bulk email.",
+    "correct_tool": "sendgrid_send_bulk_email",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_create_api_key",
+      "slack_delete_message",
+      "amplitude_get_chart"
+    ]
+  },
+  {
+    "task_id": "STR_029",
+    "instruction": "List all views in the project workspace.",
+    "correct_tool": "airtable_list_views",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_create_table",
+      "docusign_send_from_template",
+      "auth0_get_role"
+    ]
+  },
+  {
+    "task_id": "STR_030",
+    "instruction": "Browse the files to locate the latest version of the report.",
+    "correct_tool": "gdrive_list_files",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_upload_file",
+      "notion_append_blocks",
+      "sendgrid_list_contacts"
+    ]
+  },
+  {
+    "task_id": "MSG_031",
+    "instruction": "Share the file with the team so everyone has access.",
+    "correct_tool": "slack_share_file",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_create_reminder",
+      "twilio_list_whatsapp_messages",
+      "notion_update_database"
+    ]
+  },
+  {
+    "task_id": "MSG_032",
+    "instruction": "Show all private messages to review recent communications.",
+    "correct_tool": "slack_list_direct_messages",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_get_user_profile",
+      "sendgrid_list_contacts",
+      "gdrive_empty_trash"
+    ]
+  },
+  {
+    "task_id": "STR_031",
+    "instruction": "Edit the permission to reflect the latest approved changes.",
+    "correct_tool": "gdrive_update_permission",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_list_files",
+      "notion_create_page",
+      "jira_get_board"
+    ]
+  },
+  {
+    "task_id": "PAY_028",
+    "instruction": "A support agent needs to look up the subscription to resolve a billing dispute.",
+    "correct_tool": "stripe_get_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_subscriptions",
+      "paypal_list_invoices",
+      "zendesk_create_user"
+    ]
+  },
+  {
+    "task_id": "PAY_029",
+    "instruction": "Pre-authorize the order to reserve the amount.",
+    "correct_tool": "paypal_authorize_order",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_refund_capture",
+      "stripe_update_subscription",
+      "auth0_create_client"
+    ]
+  },
+  {
+    "task_id": "PAY_030",
+    "instruction": "Initiate a webhook as part of the checkout workflow.",
+    "correct_tool": "paypal_create_webhook",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_create_subscription",
+      "stripe_create_checkout_session",
+      "s3_delete_lifecycle_policy"
+    ]
+  },
+  {
+    "task_id": "MSG_033",
+    "instruction": "Retrieve the stats to check its delivery and open status.",
+    "correct_tool": "sendgrid_get_stats",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_delete_template",
+      "slack_list_users",
+      "stripe_create_coupon"
+    ]
+  },
+  {
+    "task_id": "PAY_031",
+    "instruction": "Show every prices associated with this account.",
+    "correct_tool": "stripe_list_prices",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_create_coupon",
+      "paypal_suspend_subscription",
+      "slack_unpin_message"
+    ]
+  },
+  {
+    "task_id": "CRM_026",
+    "instruction": "Document the call in the CRM after the meeting.",
+    "correct_tool": "hubspot_log_call",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_update_pipeline",
+      "zendesk_list_webhooks",
+      "paypal_suspend_subscription"
+    ]
+  },
+  {
+    "task_id": "STR_032",
+    "instruction": "Retrieve the user to share it with a stakeholder.",
+    "correct_tool": "notion_get_user",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_list_users",
+      "airtable_create_table",
+      "twilio_get_message"
+    ]
+  },
+  {
+    "task_id": "CRM_027",
+    "instruction": "Delete the ticket for the churned account.",
+    "correct_tool": "zendesk_delete_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_list_triggers",
+      "hubspot_create_contact",
+      "s3_put_lifecycle_policy"
+    ]
+  },
+  {
+    "task_id": "MSG_034",
+    "instruction": "Delete the recording to clean up the conversation history.",
+    "correct_tool": "twilio_delete_recording",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "twilio_list_phone_numbers",
+      "sendgrid_delete_list",
+      "auth0_create_connection"
+    ]
+  },
+  {
+    "task_id": "MSG_035",
+    "instruction": "Remove the scheduled message that was sent with incorrect information.",
+    "correct_tool": "slack_delete_scheduled_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "slack_delete_message",
+      "twilio_cancel_call",
+      "jira_list_users"
+    ]
+  },
+  {
+    "task_id": "DEV_042",
+    "instruction": "The team needs a version to get the feature started.",
+    "correct_tool": "jira_create_version",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_list_attachments",
+      "github_add_collaborator",
+      "sendgrid_get_click_stats"
+    ]
+  },
+  {
+    "task_id": "MSG_036",
+    "instruction": "Perform the search action on the contacts.",
+    "correct_tool": "sendgrid_search_contacts",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_delete_contact",
+      "slack_get_user",
+      "zendesk_delete_user"
+    ]
+  },
+  {
+    "task_id": "ANL_013",
+    "instruction": "Fetch the project info results to share with the product team.",
+    "correct_tool": "amplitude_get_project_info",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_identify_user",
+      "mixpanel_get_retention",
+      "slack_set_user_status"
+    ]
+  },
+  {
+    "task_id": "STR_033",
+    "instruction": "Provision a comment for the team to collaborate on.",
+    "correct_tool": "gdrive_create_comment",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_list_folders",
+      "s3_delete_bucket",
+      "auth0_list_connections"
+    ]
+  },
+  {
+    "task_id": "STR_034",
+    "instruction": "Apply the versioning settings to meet the data governance requirement.",
+    "correct_tool": "s3_set_versioning",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_list_buckets",
+      "airtable_list_tables",
+      "github_star_repo"
+    ]
+  },
+  {
+    "task_id": "DEV_043",
+    "instruction": "A developer needs a new code review request to track the upcoming work.",
+    "correct_tool": "github_create_pull_request",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_get_release",
+      "jira_delete_issue",
+      "gdrive_create_file"
+    ]
+  },
+  {
+    "task_id": "CRM_028",
+    "instruction": "Add a company from the latest marketing campaign lead.",
+    "correct_tool": "hubspot_create_company",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_delete_deal",
+      "zendesk_create_organization",
+      "s3_list_buckets"
+    ]
+  },
+  {
+    "task_id": "DEV_044",
+    "instruction": "List the code review requests to triage and prioritize incoming work.",
+    "correct_tool": "github_list_pull_requests",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_file_content",
+      "jira_get_sprint",
+      "sendgrid_send_email"
+    ]
+  },
+  {
+    "task_id": "CRM_029",
+    "instruction": "Remove the duplicate macro that was created in error.",
+    "correct_tool": "zendesk_delete_macro",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_create_trigger",
+      "hubspot_get_company",
+      "gdrive_share_file"
+    ]
+  },
+  {
+    "task_id": "ANL_014",
+    "instruction": "Show all user segments the team has set up so far.",
+    "correct_tool": "amplitude_list_cohorts",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_list_annotations",
+      "mixpanel_get_event_stats",
+      "docusign_list_documents"
+    ]
+  },
+  {
+    "task_id": "CRM_030",
+    "instruction": "Add a macro from the latest marketing campaign lead.",
+    "correct_tool": "zendesk_create_macro",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_delete_trigger",
+      "hubspot_get_contact",
+      "jira_delete_project"
+    ]
+  },
+  {
+    "task_id": "CRM_031",
+    "instruction": "Mark the deal as resolved and close it out.",
+    "correct_tool": "hubspot_close_deal",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_get_contact",
+      "zendesk_list_webhooks",
+      "slack_schedule_message"
+    ]
+  },
+  {
+    "task_id": "CRM_032",
+    "instruction": "Revise the trigger following the customer's feedback.",
+    "correct_tool": "zendesk_update_trigger",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_solve_ticket",
+      "hubspot_update_contact",
+      "jira_get_comment"
+    ]
+  },
+  {
+    "task_id": "ANL_015",
+    "instruction": "Fetch the chart results to share with the product team.",
+    "correct_tool": "amplitude_get_chart",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_query_api",
+      "mixpanel_list_cohorts",
+      "github_get_branch"
+    ]
+  },
+  {
+    "task_id": "MSG_037",
+    "instruction": "Set up a new flow for the project team to collaborate.",
+    "correct_tool": "twilio_create_flow",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_make_call",
+      "sendgrid_list_api_keys",
+      "auth0_list_clients"
+    ]
+  },
+  {
+    "task_id": "PAY_032",
+    "instruction": "Pull all coupons for the auditor's review.",
+    "correct_tool": "stripe_list_coupons",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_charges",
+      "paypal_get_plan",
+      "sendgrid_delete_contact"
+    ]
+  },
+  {
+    "task_id": "PAY_033",
+    "instruction": "Email the invoice to the customer so they can review and pay.",
+    "correct_tool": "paypal_send_invoice",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_cancel_invoice",
+      "stripe_list_refunds",
+      "docusign_void_envelope"
+    ]
+  },
+  {
+    "task_id": "MSG_038",
+    "instruction": "Update the channel name after the team rebranded the initiative.",
+    "correct_tool": "slack_rename_channel",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_list_pins",
+      "twilio_send_sms",
+      "docusign_create_envelope"
+    ]
+  },
+  {
+    "task_id": "STR_035",
+    "instruction": "Reply to the to comment with the team's feedback.",
+    "correct_tool": "gdrive_reply_to_comment",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_share_file",
+      "notion_list_blocks",
+      "paypal_cancel_subscription"
+    ]
+  },
+  {
+    "task_id": "CRM_033",
+    "instruction": "Look up the company to prepare for the upcoming customer call.",
+    "correct_tool": "hubspot_get_company",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_list_pipelines",
+      "zendesk_list_triggers",
+      "notion_archive_page"
+    ]
+  },
+  {
+    "task_id": "ANL_016",
+    "instruction": "List existing charts to find the one for this campaign.",
+    "correct_tool": "amplitude_list_charts",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_get_retention_analysis",
+      "mixpanel_create_dashboard",
+      "slack_delete_scheduled_message"
+    ]
+  },
+  {
+    "task_id": "ANL_017",
+    "instruction": "Build a new annotation to monitor the key product metric this quarter.",
+    "correct_tool": "mixpanel_create_annotation",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "mixpanel_get_cohort",
+      "amplitude_track_event",
+      "github_remove_team_member"
+    ]
+  },
+  {
+    "task_id": "STR_036",
+    "instruction": "Send the from template to the signatories so they can complete it.",
+    "correct_tool": "docusign_send_from_template",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_delete_recipient",
+      "notion_search",
+      "auth0_unblock_user"
+    ]
+  },
+  {
+    "task_id": "MSG_039",
+    "instruction": "Place a call to follow up on the open case.",
+    "correct_tool": "twilio_make_call",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_whatsapp_messages",
+      "slack_list_pins",
+      "docusign_add_document"
+    ]
+  },
+  {
+    "task_id": "STR_037",
+    "instruction": "Provision a template for the team to collaborate on.",
+    "correct_tool": "docusign_create_template",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_list_recipients",
+      "gdrive_delete_folder",
+      "auth0_get_user_roles"
+    ]
+  },
+  {
+    "task_id": "MSG_040",
+    "instruction": "Remove the flow that was sent with incorrect information.",
+    "correct_tool": "twilio_delete_flow",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "twilio_delete_conversation",
+      "slack_update_message",
+      "amplitude_list_charts"
+    ]
+  },
+  {
+    "task_id": "DEV_045",
+    "instruction": "Kick off the workflow after the emergency patch is merged.",
+    "correct_tool": "github_trigger_workflow",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_list_starred",
+      "jira_archive_version",
+      "sendgrid_send_bulk_email"
+    ]
+  },
+  {
+    "task_id": "PAY_034",
+    "instruction": "The finance team needs a list of subscriptions for the monthly reconciliation.",
+    "correct_tool": "stripe_list_subscriptions",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_delete_coupon",
+      "paypal_get_account_info",
+      "hubspot_create_deal"
+    ]
+  },
+  {
+    "task_id": "STR_038",
+    "instruction": "Provision a bucket for the team to collaborate on.",
+    "correct_tool": "s3_create_bucket",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "s3_create_presigned_url",
+      "airtable_update_table",
+      "paypal_create_invoice"
+    ]
+  },
+  {
+    "task_id": "DEV_046",
+    "instruction": "Create a release as part of the sprint planning process.",
+    "correct_tool": "github_create_release",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_create_repo",
+      "jira_update_issue",
+      "twilio_list_flows"
+    ]
+  },
+  {
+    "task_id": "ANL_018",
+    "instruction": "Load events from the data warehouse into the analytics system.",
+    "correct_tool": "mixpanel_import_events",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_get_funnel",
+      "amplitude_identify_user",
+      "github_delete_release"
+    ]
+  },
+  {
+    "task_id": "STR_039",
+    "instruction": "Update the record with the revised content from the team.",
+    "correct_tool": "airtable_update_record",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_get_record",
+      "s3_create_presigned_url",
+      "slack_create_channel"
+    ]
+  },
+  {
+    "task_id": "MSG_041",
+    "instruction": "Look up the conversation for the audit trail.",
+    "correct_tool": "twilio_get_conversation",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_whatsapp_messages",
+      "sendgrid_get_open_stats",
+      "notion_get_user"
+    ]
+  },
+  {
+    "task_id": "IDN_014",
+    "instruction": "Look up the stats to verify the user's current access level.",
+    "correct_tool": "auth0_get_stats",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_send_password_reset",
+      "hubspot_get_pipeline",
+      "stripe_delete_webhook"
+    ]
+  },
+  {
+    "task_id": "STR_040",
+    "instruction": "Browse the documents to locate the latest version of the report.",
+    "correct_tool": "docusign_list_documents",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_add_document",
+      "airtable_update_table",
+      "jira_get_issue"
+    ]
+  },
+  {
+    "task_id": "ANL_019",
+    "instruction": "Export the data to share with the data science team for modelling.",
+    "correct_tool": "mixpanel_export_data",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_delete_user_profile",
+      "amplitude_get_chart",
+      "sendgrid_get_stats"
+    ]
+  },
+  {
+    "task_id": "IDN_015",
+    "instruction": "Show all connections to audit who currently has access.",
+    "correct_tool": "auth0_list_connections",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_client",
+      "airtable_list_views",
+      "slack_get_permalink"
+    ]
+  },
+  {
+    "task_id": "STR_041",
+    "instruction": "List all comments in the project workspace.",
+    "correct_tool": "notion_list_comments",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_append_blocks",
+      "docusign_list_recipients",
+      "hubspot_log_call"
+    ]
+  },
+  {
+    "task_id": "STR_042",
+    "instruction": "Set up a page to store the files for this initiative.",
+    "correct_tool": "notion_create_page",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_create_database",
+      "s3_list_objects",
+      "github_list_starred"
+    ]
+  },
+  {
+    "task_id": "PAY_035",
+    "instruction": "Email the invoice to the customer so they can review and pay.",
+    "correct_tool": "stripe_send_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_customer",
+      "paypal_list_transactions",
+      "docusign_list_templates"
+    ]
+  },
+  {
+    "task_id": "MSG_042",
+    "instruction": "Perform the update action on the contact.",
+    "correct_tool": "sendgrid_update_contact",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_create_template",
+      "twilio_create_conversation",
+      "github_update_issue"
+    ]
+  },
+  {
+    "task_id": "CRM_034",
+    "instruction": "List all active organizations for the account manager's pipeline.",
+    "correct_tool": "zendesk_list_organizations",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_update_trigger",
+      "hubspot_create_task",
+      "stripe_delete_customer"
+    ]
+  },
+  {
+    "task_id": "DEV_047",
+    "instruction": "Create an independent copy of the repo to experiment without affecting the original.",
+    "correct_tool": "github_fork_repo",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_delete_team",
+      "jira_list_sprints",
+      "sendgrid_create_list"
+    ]
+  },
+  {
+    "task_id": "STR_043",
+    "instruction": "Remove the recipient that is no longer needed to free up space.",
+    "correct_tool": "docusign_delete_recipient",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "docusign_send_from_template",
+      "s3_delete_object",
+      "github_list_issues"
+    ]
+  },
+  {
+    "task_id": "DEV_048",
+    "instruction": "Submit the review after completing the code inspection.",
+    "correct_tool": "github_submit_review",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_search_code",
+      "jira_search_users",
+      "slack_list_pins"
+    ]
+  },
+  {
+    "task_id": "STR_044",
+    "instruction": "Enable encryption on the storage bucket to meet the compliance requirement.",
+    "correct_tool": "s3_enable_encryption",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_put_object",
+      "notion_update_block",
+      "amplitude_get_chart"
+    ]
+  },
+  {
+    "task_id": "PAY_036",
+    "instruction": "Remove the test invoice created during QA.",
+    "correct_tool": "stripe_delete_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_list_webhooks",
+      "paypal_get_payment",
+      "mixpanel_create_dashboard"
+    ]
+  },
+  {
+    "task_id": "CRM_035",
+    "instruction": "Show all deals so the sales team can prioritize outreach.",
+    "correct_tool": "hubspot_list_deals",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_get_company",
+      "zendesk_close_ticket",
+      "paypal_activate_plan"
+    ]
+  },
+  {
+    "task_id": "DEV_049",
+    "instruction": "Show all open boards so the team can plan capacity.",
+    "correct_tool": "jira_list_boards",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_delete_comment",
+      "github_get_branch",
+      "notion_create_database"
+    ]
+  },
+  {
+    "task_id": "STR_045",
+    "instruction": "Retrieve the base to share it with a stakeholder.",
+    "correct_tool": "airtable_get_base",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_create_table",
+      "gdrive_get_file",
+      "slack_update_message"
+    ]
+  },
+  {
+    "task_id": "STR_046",
+    "instruction": "Create a new temporary access link to organize the project's assets.",
+    "correct_tool": "s3_create_presigned_url",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "s3_get_object_metadata",
+      "gdrive_create_file",
+      "github_get_branch"
+    ]
+  },
+  {
+    "task_id": "STR_047",
+    "instruction": "Export the file to the local machine for processing.",
+    "correct_tool": "gdrive_download_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_get_file",
+      "notion_list_comments",
+      "mixpanel_create_user_profile"
+    ]
+  },
+  {
+    "task_id": "MSG_043",
+    "instruction": "Delete the contact to clean up the conversation history.",
+    "correct_tool": "sendgrid_delete_contact",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "sendgrid_get_open_stats",
+      "slack_create_channel",
+      "airtable_list_records"
+    ]
+  },
+  {
+    "task_id": "STR_048",
+    "instruction": "List all permissions in the project workspace.",
+    "correct_tool": "gdrive_list_permissions",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_remove_permission",
+      "docusign_void_envelope",
+      "amplitude_get_cohort"
+    ]
+  },
+  {
+    "task_id": "DEV_050",
+    "instruction": "Show all open issues so the team can plan capacity.",
+    "correct_tool": "github_list_issues",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_cancel_workflow_run",
+      "jira_update_version",
+      "paypal_authorize_order"
+    ]
+  },
+  {
+    "task_id": "CRM_036",
+    "instruction": "Edit the macro to reflect the latest status after the meeting.",
+    "correct_tool": "zendesk_update_macro",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_add_user_to_group",
+      "hubspot_create_company",
+      "mixpanel_list_dashboards"
+    ]
+  },
+  {
+    "task_id": "DEV_051",
+    "instruction": "A developer needs a new branch to track the upcoming work.",
+    "correct_tool": "github_create_branch",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_create_webhook",
+      "jira_get_user",
+      "twilio_delete_flow"
+    ]
+  },
+  {
+    "task_id": "STR_049",
+    "instruction": "Set up a table to store the files for this initiative.",
+    "correct_tool": "airtable_create_table",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_bulk_update_records",
+      "gdrive_update_file",
+      "stripe_get_charge"
+    ]
+  },
+  {
+    "task_id": "DEV_052",
+    "instruction": "Attach a attachment to provide additional context for the reviewers.",
+    "correct_tool": "jira_add_attachment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_list_boards",
+      "github_close_issue",
+      "notion_list_users"
+    ]
+  },
+  {
+    "task_id": "MSG_044",
+    "instruction": "Alert the customer by sending a whatsapp about their account update.",
+    "correct_tool": "twilio_send_whatsapp",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_delete_conversation",
+      "sendgrid_get_stats",
+      "hubspot_get_contact"
+    ]
+  },
+  {
+    "task_id": "IDN_016",
+    "instruction": "List all clients for the access review \u2014 flag any over-privileged accounts.",
+    "correct_tool": "auth0_list_clients",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_search_users",
+      "jira_get_sprint",
+      "hubspot_search_contacts"
+    ]
+  },
+  {
+    "task_id": "PAY_037",
+    "instruction": "Generate a report of all payouts for the current billing period.",
+    "correct_tool": "stripe_list_payouts",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_capture_payment_intent",
+      "paypal_confirm_order",
+      "sendgrid_list_contacts"
+    ]
+  },
+  {
+    "task_id": "DEV_053",
+    "instruction": "Show all open reviews so the team can plan capacity.",
+    "correct_tool": "github_list_reviews",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_create_issue",
+      "jira_release_version",
+      "mixpanel_import_events"
+    ]
+  },
+  {
+    "task_id": "MSG_045",
+    "instruction": "List the pins to find the one sent to the customer.",
+    "correct_tool": "slack_list_pins",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_get_user_profile",
+      "twilio_release_phone_number",
+      "mixpanel_list_dashboards"
+    ]
+  },
+  {
+    "task_id": "MSG_046",
+    "instruction": "Look up the account for the audit trail.",
+    "correct_tool": "twilio_get_account",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_delete_message",
+      "sendgrid_list_api_keys",
+      "notion_query_database"
+    ]
+  },
+  {
+    "task_id": "DEV_054",
+    "instruction": "The file is stale and no longer needed \u2014 remove it.",
+    "correct_tool": "github_delete_file",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_search_issues",
+      "jira_search_users",
+      "airtable_update_field"
+    ]
+  },
+  {
+    "task_id": "MSG_047",
+    "instruction": "Show all phone numbers to review recent communications.",
+    "correct_tool": "twilio_list_phone_numbers",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_conversations",
+      "slack_open_direct_message",
+      "github_list_workflow_runs"
+    ]
+  },
+  {
+    "task_id": "PAY_038",
+    "instruction": "Temporarily deactivate the plan pending an account review.",
+    "correct_tool": "paypal_deactivate_plan",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "paypal_get_invoice",
+      "stripe_get_refund",
+      "zendesk_create_macro"
+    ]
+  },
+  {
+    "task_id": "DEV_055",
+    "instruction": "Mark the issue as resolved after confirming the fix works.",
+    "correct_tool": "github_close_issue",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_create_webhook",
+      "jira_assign_issue",
+      "twilio_list_recordings"
+    ]
+  },
+  {
+    "task_id": "STR_050",
+    "instruction": "Upload the object to the designated storage location.",
+    "correct_tool": "s3_put_object",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_get_object_metadata",
+      "notion_update_database",
+      "slack_invite_to_channel"
+    ]
+  },
+  {
+    "task_id": "STR_051",
+    "instruction": "Create a new folder to organize the project's assets.",
+    "correct_tool": "gdrive_create_folder",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_list_revisions",
+      "docusign_add_recipient",
+      "stripe_create_product"
+    ]
+  },
+  {
+    "task_id": "DEV_056",
+    "instruction": "Fetch the file content to review its current state before the stand-up.",
+    "correct_tool": "github_get_file_content",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_search_code",
+      "jira_search_issues",
+      "stripe_create_payout"
+    ]
+  },
+  {
+    "task_id": "CRM_037",
+    "instruction": "Pull the ticket details before the sales meeting.",
+    "correct_tool": "zendesk_get_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_add_comment",
+      "hubspot_log_email",
+      "notion_list_comments"
+    ]
+  },
+  {
+    "task_id": "STR_052",
+    "instruction": "Set up a envelope to store the files for this initiative.",
+    "correct_tool": "docusign_create_envelope",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_send_from_template",
+      "gdrive_remove_permission",
+      "zendesk_list_organizations"
+    ]
+  },
+  {
+    "task_id": "DEV_057",
+    "instruction": "The engineering manager wants to see all attachments for this sprint.",
+    "correct_tool": "jira_list_attachments",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_release_version",
+      "github_list_releases",
+      "mixpanel_create_dashboard"
+    ]
+  },
+  {
+    "task_id": "STR_053",
+    "instruction": "Handle multiple update records updates at once.",
+    "correct_tool": "airtable_bulk_update_records",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_bulk_create_records",
+      "gdrive_list_permissions",
+      "slack_open_direct_message"
+    ]
+  },
+  {
+    "task_id": "PAY_039",
+    "instruction": "The order is confirmed; create a product to collect the funds.",
+    "correct_tool": "stripe_create_product",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_delete_webhook",
+      "zendesk_delete_webhook"
+    ]
+  },
+  {
+    "task_id": "ANL_020",
+    "instruction": "The product team needs a new annotation for the A/B test analysis.",
+    "correct_tool": "amplitude_create_annotation",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "amplitude_track_event",
+      "mixpanel_create_user_profile",
+      "hubspot_get_contact"
+    ]
+  },
+  {
+    "task_id": "PAY_040",
+    "instruction": "Pull all refunds for the auditor's review.",
+    "correct_tool": "stripe_list_refunds",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_finalize_invoice",
+      "paypal_authorize_order",
+      "mixpanel_get_retention"
+    ]
+  },
+  {
+    "task_id": "ANL_021",
+    "instruction": "Retrieve the retention report for the board presentation.",
+    "correct_tool": "amplitude_get_retention_analysis",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_get_chart",
+      "mixpanel_get_funnel",
+      "hubspot_update_pipeline"
+    ]
+  },
+  {
+    "task_id": "STR_054",
+    "instruction": "Set up a field to store the files for this initiative.",
+    "correct_tool": "airtable_create_field",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_create_table",
+      "gdrive_delete_folder",
+      "jira_update_version"
+    ]
+  },
+  {
+    "task_id": "IDN_017",
+    "instruction": "Remove the connection as part of the offboarding checklist.",
+    "correct_tool": "auth0_delete_connection",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_unblock_user",
+      "gdrive_list_permissions",
+      "jira_create_issue"
+    ]
+  },
+  {
+    "task_id": "ANL_022",
+    "instruction": "Show all dashboards the team has set up so far.",
+    "correct_tool": "mixpanel_list_dashboards",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_cohorts",
+      "amplitude_get_funnel_analysis",
+      "zendesk_apply_macro"
+    ]
+  },
+  {
+    "task_id": "PAY_041",
+    "instruction": "Remove the test customer created during QA.",
+    "correct_tool": "stripe_delete_customer",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_list_prices",
+      "paypal_list_payments",
+      "gdrive_export_file"
+    ]
+  },
+  {
+    "task_id": "DEV_058",
+    "instruction": "Remove the worklog that was accidentally created.",
+    "correct_tool": "jira_delete_worklog",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "jira_list_projects",
+      "github_get_repo",
+      "slack_rename_channel"
+    ]
+  },
+  {
+    "task_id": "IDN_018",
+    "instruction": "Show all roles to audit who currently has access.",
+    "correct_tool": "auth0_list_roles",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_connection",
+      "docusign_send_from_template",
+      "jira_delete_worklog"
+    ]
+  },
+  {
+    "task_id": "DEV_059",
+    "instruction": "Stop the pipeline run that was triggered by mistake.",
+    "correct_tool": "github_cancel_workflow_run",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_list_repos",
+      "jira_delete_comment",
+      "paypal_suspend_subscription"
+    ]
+  },
+  {
+    "task_id": "ANL_023",
+    "instruction": "Capture the event as part of the product funnel measurement.",
+    "correct_tool": "mixpanel_track_event",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_annotations",
+      "amplitude_list_cohorts",
+      "stripe_update_product"
+    ]
+  },
+  {
+    "task_id": "PAY_042",
+    "instruction": "The customer changed their mind \u2014 cancel the pending invoice immediately.",
+    "correct_tool": "paypal_cancel_invoice",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "paypal_delete_webhook",
+      "stripe_create_coupon",
+      "github_list_pull_requests"
+    ]
+  },
+  {
+    "task_id": "MSG_048",
+    "instruction": "Remove the API credential that was sent with incorrect information.",
+    "correct_tool": "sendgrid_delete_api_key",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "sendgrid_get_click_stats",
+      "slack_set_user_status",
+      "zendesk_merge_tickets"
+    ]
+  },
+  {
+    "task_id": "CRM_038",
+    "instruction": "Edit the ticket to reflect the latest status after the meeting.",
+    "correct_tool": "zendesk_update_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_get_view",
+      "hubspot_delete_company",
+      "paypal_get_payment"
+    ]
+  },
+  {
+    "task_id": "MSG_049",
+    "instruction": "Provision a list to organize communications for this initiative.",
+    "correct_tool": "sendgrid_create_list",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_delete_contact",
+      "twilio_add_conversation_participant",
+      "jira_get_board"
+    ]
+  },
+  {
+    "task_id": "CRM_039",
+    "instruction": "List all active companies for the account manager's pipeline.",
+    "correct_tool": "hubspot_list_companies",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_complete_task",
+      "zendesk_search_tickets",
+      "stripe_list_invoices"
+    ]
+  },
+  {
+    "task_id": "IDN_019",
+    "instruction": "Trigger a password reset so the user can regain access to their account.",
+    "correct_tool": "auth0_send_password_reset",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_remove_role",
+      "gdrive_list_folders",
+      "hubspot_delete_company"
+    ]
+  },
+  {
+    "task_id": "DEV_060",
+    "instruction": "The engineering manager wants to see all projects for this sprint.",
+    "correct_tool": "jira_list_projects",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_search_issues",
+      "github_create_pull_request",
+      "hubspot_complete_task"
+    ]
+  },
+  {
+    "task_id": "DEV_061",
+    "instruction": "Kick off the work by creating a review in the project tracker.",
+    "correct_tool": "github_create_review",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_get_workflow_run",
+      "jira_release_version",
+      "hubspot_complete_task"
+    ]
+  },
+  {
+    "task_id": "CRM_040",
+    "instruction": "Edit the company to reflect the latest status after the meeting.",
+    "correct_tool": "hubspot_update_company",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_get_company",
+      "zendesk_update_user",
+      "airtable_list_records"
+    ]
+  },
+  {
+    "task_id": "STR_055",
+    "instruction": "Show the envelopes to find the document the client requested.",
+    "correct_tool": "docusign_list_envelopes",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_send_envelope",
+      "notion_get_user",
+      "sendgrid_update_contact"
+    ]
+  },
+  {
+    "task_id": "ANL_024",
+    "instruction": "Show all annotations the team has set up so far.",
+    "correct_tool": "mixpanel_list_annotations",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_create_user_profile",
+      "amplitude_create_annotation",
+      "auth0_remove_role"
+    ]
+  },
+  {
+    "task_id": "STR_056",
+    "instruction": "Handle multiple create records updates at once.",
+    "correct_tool": "airtable_bulk_create_records",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_update_record",
+      "notion_get_block",
+      "stripe_pay_invoice"
+    ]
+  },
+  {
+    "task_id": "ANL_025",
+    "instruction": "Show all events the team has set up so far.",
+    "correct_tool": "mixpanel_list_events",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_cohorts",
+      "amplitude_get_project_info",
+      "stripe_create_refund"
+    ]
+  },
+  {
+    "task_id": "DEV_062",
+    "instruction": "A developer needs a new repo to track the upcoming work.",
+    "correct_tool": "github_create_repo",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_compare_commits",
+      "jira_start_sprint",
+      "slack_list_reminders"
+    ]
+  },
+  {
+    "task_id": "CRM_041",
+    "instruction": "Look up the organization to prepare for the upcoming customer call.",
+    "correct_tool": "zendesk_get_organization",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_search_users",
+      "hubspot_update_company",
+      "jira_list_boards"
+    ]
+  },
+  {
+    "task_id": "MSG_050",
+    "instruction": "Purchase a new phone number for the marketing campaign.",
+    "correct_tool": "twilio_buy_phone_number",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_send_sms",
+      "sendgrid_send_bulk_email",
+      "airtable_get_record"
+    ]
+  },
+  {
+    "task_id": "PAY_043",
+    "instruction": "Initiate a subscription plan as part of the checkout workflow.",
+    "correct_tool": "paypal_create_billing_plan",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_refund_capture",
+      "stripe_get_customer",
+      "zendesk_delete_user"
+    ]
+  },
+  {
+    "task_id": "PAY_044",
+    "instruction": "Settle the outstanding invoice on behalf of the customer.",
+    "correct_tool": "paypal_pay_invoice",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_list_plans",
+      "stripe_update_product",
+      "gdrive_remove_permission"
+    ]
+  },
+  {
+    "task_id": "CRM_042",
+    "instruction": "Consolidate the tickets to create a single source of truth.",
+    "correct_tool": "zendesk_merge_tickets",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_tickets",
+      "hubspot_search_companies",
+      "notion_create_comment"
+    ]
+  },
+  {
+    "task_id": "STR_057",
+    "instruction": "List all revisions in the project workspace.",
+    "correct_tool": "gdrive_list_revisions",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_delete_folder",
+      "notion_query_database",
+      "twilio_get_message"
+    ]
+  },
+  {
+    "task_id": "MSG_051",
+    "instruction": "Remove the conversation that was sent with incorrect information.",
+    "correct_tool": "twilio_delete_conversation",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "twilio_delete_recording",
+      "slack_remove_reaction",
+      "mixpanel_get_funnel"
+    ]
+  },
+  {
+    "task_id": "PAY_045",
+    "instruction": "Initiate a checkout session as part of the checkout workflow.",
+    "correct_tool": "stripe_create_checkout_session",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_archive_product",
+      "paypal_pay_invoice",
+      "notion_archive_page"
+    ]
+  },
+  {
+    "task_id": "STR_058",
+    "instruction": "Show the databases to find the document the client requested.",
+    "correct_tool": "notion_list_databases",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_list_users",
+      "airtable_update_record",
+      "paypal_show_refund"
+    ]
+  },
+  {
+    "task_id": "ANL_026",
+    "instruction": "Fetch the user segment results to share with the product team.",
+    "correct_tool": "mixpanel_get_cohort",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_track_event",
+      "amplitude_get_cohort",
+      "github_transfer_repo"
+    ]
+  },
+  {
+    "task_id": "DEV_063",
+    "instruction": "Revise the file after the team discussion.",
+    "correct_tool": "github_update_file",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_assign_issue",
+      "jira_create_board",
+      "stripe_get_balance"
+    ]
+  },
+  {
+    "task_id": "PAY_046",
+    "instruction": "Pull up the refund before issuing the refund.",
+    "correct_tool": "stripe_get_refund",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_update_payment_intent",
+      "paypal_create_invoice",
+      "zendesk_list_triggers"
+    ]
+  },
+  {
+    "task_id": "DEV_064",
+    "instruction": "Kick off the work by creating a file in the project tracker.",
+    "correct_tool": "github_create_file",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_cancel_workflow_run",
+      "jira_search_issues",
+      "zendesk_create_trigger"
+    ]
+  },
+  {
+    "task_id": "DEV_065",
+    "instruction": "Edit the project with findings from the code review.",
+    "correct_tool": "jira_update_project",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_get_sprint",
+      "github_compare_commits",
+      "zendesk_solve_ticket"
+    ]
+  },
+  {
+    "task_id": "IDN_020",
+    "instruction": "Trigger a verification email so the user can regain access to their account.",
+    "correct_tool": "auth0_send_verification_email",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_list_users",
+      "twilio_delete_recording",
+      "hubspot_close_deal"
+    ]
+  },
+  {
+    "task_id": "CRM_043",
+    "instruction": "Show all pipelines so the sales team can prioritize outreach.",
+    "correct_tool": "hubspot_list_pipelines",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_delete_deal",
+      "zendesk_list_groups",
+      "github_create_pull_request"
+    ]
+  },
+  {
+    "task_id": "PAY_047",
+    "instruction": "Modify the customer to apply the latest pricing adjustment.",
+    "correct_tool": "stripe_update_customer",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_pay_invoice",
+      "paypal_create_webhook",
+      "docusign_add_document"
+    ]
+  },
+  {
+    "task_id": "MSG_052",
+    "instruction": "Show all conversation participants to review recent communications.",
+    "correct_tool": "twilio_list_conversation_participants",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_cancel_call",
+      "slack_list_channels",
+      "paypal_activate_subscription"
+    ]
+  },
+  {
+    "task_id": "DEV_066",
+    "instruction": "The team needs a board to get the feature started.",
+    "correct_tool": "jira_create_board",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_list_comments",
+      "github_merge_branches",
+      "gdrive_list_files"
+    ]
+  },
+  {
+    "task_id": "CRM_044",
+    "instruction": "A sales rep just finished a call \u2014 log the new contact in the system.",
+    "correct_tool": "hubspot_create_contact",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_log_meeting",
+      "zendesk_update_trigger",
+      "stripe_create_price"
+    ]
+  },
+  {
+    "task_id": "PAY_048",
+    "instruction": "Finance needs a payment transaction created for this account.",
+    "correct_tool": "stripe_create_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_delete_webhook",
+      "paypal_cancel_subscription",
+      "hubspot_list_pipelines"
+    ]
+  },
+  {
+    "task_id": "CRM_045",
+    "instruction": "Mark the ticket as resolved and close it out.",
+    "correct_tool": "zendesk_close_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_webhooks",
+      "hubspot_log_call",
+      "mixpanel_import_events"
+    ]
+  },
+  {
+    "task_id": "CRM_046",
+    "instruction": "Delete the user for the churned account.",
+    "correct_tool": "zendesk_delete_user",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_list_webhooks",
+      "hubspot_complete_task",
+      "amplitude_export_events"
+    ]
+  },
+  {
+    "task_id": "DEV_067",
+    "instruction": "Show all open repos so the team can plan capacity.",
+    "correct_tool": "github_list_repos",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_search_repos",
+      "jira_complete_sprint",
+      "paypal_list_webhooks"
+    ]
+  },
+  {
+    "task_id": "MSG_053",
+    "instruction": "Add a stakeholder to the to channel for visibility.",
+    "correct_tool": "slack_invite_to_channel",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_delete_message",
+      "twilio_list_phone_numbers",
+      "hubspot_create_contact"
+    ]
+  },
+  {
+    "task_id": "IDN_021",
+    "instruction": "Edit the client after the department restructure.",
+    "correct_tool": "auth0_update_client",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_delete_client",
+      "zendesk_create_trigger",
+      "stripe_create_refund"
+    ]
+  },
+  {
+    "task_id": "STR_059",
+    "instruction": "Permanently delete the sensitive object after it has been archived.",
+    "correct_tool": "s3_delete_object",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "s3_set_cors_policy",
+      "gdrive_download_file",
+      "jira_delete_project"
+    ]
+  },
+  {
+    "task_id": "ANL_027",
+    "instruction": "Fetch the conversion analysis results to share with the product team.",
+    "correct_tool": "amplitude_get_funnel_analysis",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_export_events",
+      "mixpanel_import_events",
+      "stripe_get_refund"
+    ]
+  },
+  {
+    "task_id": "ANL_028",
+    "instruction": "Query the analytics API to generate the custom performance report.",
+    "correct_tool": "amplitude_query_api",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_get_retention_analysis",
+      "mixpanel_create_user_profile",
+      "stripe_list_prices"
+    ]
+  },
+  {
+    "task_id": "DEV_068",
+    "instruction": "Revise the comment after the team discussion.",
+    "correct_tool": "jira_update_comment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_search_issues",
+      "github_get_file_content",
+      "amplitude_list_annotations"
+    ]
+  },
+  {
+    "task_id": "CRM_047",
+    "instruction": "Retrieve the deal to review the account history.",
+    "correct_tool": "hubspot_get_deal",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_search_companies",
+      "zendesk_create_view",
+      "mixpanel_list_events"
+    ]
+  },
+  {
+    "task_id": "PAY_049",
+    "instruction": "Finalize the transaction by capturing the order.",
+    "correct_tool": "paypal_capture_order",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_get_account_info",
+      "stripe_create_payout",
+      "github_submit_review"
+    ]
+  },
+  {
+    "task_id": "MSG_054",
+    "instruction": "Provision a subaccount to organize communications for this initiative.",
+    "correct_tool": "twilio_create_subaccount",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "twilio_list_subaccounts",
+      "sendgrid_list_templates",
+      "gdrive_copy_file"
+    ]
+  },
+  {
+    "task_id": "DEV_069",
+    "instruction": "The branch is stale and no longer needed \u2014 remove it.",
+    "correct_tool": "github_delete_branch",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "github_submit_review",
+      "jira_release_version",
+      "auth0_block_user"
+    ]
+  },
+  {
+    "task_id": "MSG_055",
+    "instruction": "Retrieve the flow to check its delivery and open status.",
+    "correct_tool": "twilio_get_flow",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_messages",
+      "slack_open_direct_message",
+      "paypal_create_order"
+    ]
+  },
+  {
+    "task_id": "ANL_029",
+    "instruction": "Delete the user profile as part of GDPR right-to-erasure compliance.",
+    "correct_tool": "mixpanel_delete_user_profile",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "mixpanel_list_events",
+      "amplitude_list_exports",
+      "hubspot_log_call"
+    ]
+  },
+  {
+    "task_id": "PAY_050",
+    "instruction": "Retrieve the payment transaction details to verify the transaction status.",
+    "correct_tool": "stripe_get_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_cancel_payment_intent",
+      "paypal_create_invoice",
+      "notion_update_page"
+    ]
+  },
+  {
+    "task_id": "STR_060",
+    "instruction": "Browse the folders to locate the latest version of the report.",
+    "correct_tool": "gdrive_list_folders",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_list_permissions",
+      "docusign_send_from_template",
+      "zendesk_search_tickets"
+    ]
+  },
+  {
+    "task_id": "PAY_051",
+    "instruction": "Retrieve the payment details to verify the transaction status.",
+    "correct_tool": "paypal_get_payment",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_list_invoices",
+      "stripe_pay_invoice",
+      "sendgrid_add_contacts_to_list"
+    ]
+  },
+  {
+    "task_id": "MSG_056",
+    "instruction": "List the contacts to find the one sent to the customer.",
+    "correct_tool": "sendgrid_list_contacts",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_add_contacts_to_list",
+      "twilio_list_whatsapp_messages",
+      "jira_delete_worklog"
+    ]
+  },
+  {
+    "task_id": "STR_061",
+    "instruction": "Provision a database for the team to collaborate on.",
+    "correct_tool": "notion_create_database",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_query_database",
+      "airtable_update_field",
+      "stripe_list_charges"
+    ]
+  },
+  {
+    "task_id": "STR_062",
+    "instruction": "Fetch the status to review its contents before the meeting.",
+    "correct_tool": "docusign_get_status",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_send_envelope",
+      "s3_put_object",
+      "auth0_remove_role"
+    ]
+  },
+  {
+    "task_id": "STR_063",
+    "instruction": "Fetch the record to review its contents before the meeting.",
+    "correct_tool": "airtable_get_record",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_update_table",
+      "notion_update_database",
+      "mixpanel_track_event"
+    ]
+  },
+  {
+    "task_id": "CRM_048",
+    "instruction": "Revise the task following the customer's feedback.",
+    "correct_tool": "hubspot_update_task",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_update_pipeline",
+      "zendesk_get_satisfaction_rating",
+      "paypal_delete_webhook"
+    ]
+  },
+  {
+    "task_id": "STR_064",
+    "instruction": "Edit the file to reflect the latest approved changes.",
+    "correct_tool": "gdrive_update_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_create_file",
+      "notion_search",
+      "jira_update_version"
+    ]
+  },
+  {
+    "task_id": "STR_065",
+    "instruction": "Fetch the page to review its contents before the meeting.",
+    "correct_tool": "notion_get_page",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_update_block",
+      "gdrive_remove_permission",
+      "zendesk_delete_trigger"
+    ]
+  },
+  {
+    "task_id": "PAY_052",
+    "instruction": "Execute the show request for the refund.",
+    "correct_tool": "paypal_show_refund",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_capture_order",
+      "stripe_list_subscriptions",
+      "auth0_list_organizations"
+    ]
+  },
+  {
+    "task_id": "PAY_053",
+    "instruction": "Show every payment transactions associated with this account.",
+    "correct_tool": "stripe_list_payment_intents",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_coupons",
+      "paypal_list_webhooks",
+      "twilio_list_conversation_participants"
+    ]
+  },
+  {
+    "task_id": "CRM_049",
+    "instruction": "Remove the duplicate organization that was created in error.",
+    "correct_tool": "zendesk_delete_organization",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_list_triggers",
+      "hubspot_update_task",
+      "docusign_get_document"
+    ]
+  },
+  {
+    "task_id": "DEV_070",
+    "instruction": "The engineering manager wants to see all webhooks for this sprint.",
+    "correct_tool": "github_list_webhooks",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_update_file",
+      "jira_list_attachments",
+      "auth0_update_connection"
+    ]
+  },
+  {
+    "task_id": "CRM_050",
+    "instruction": "Close the loop by resolving the ticket after the patch.",
+    "correct_tool": "zendesk_solve_ticket",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_get_ticket",
+      "hubspot_list_companies",
+      "jira_delete_project"
+    ]
+  },
+  {
+    "task_id": "MSG_057",
+    "instruction": "Retrieve the call to check its delivery and open status.",
+    "correct_tool": "twilio_get_call",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_cancel_call",
+      "slack_list_reactions",
+      "s3_list_buckets"
+    ]
+  },
+  {
+    "task_id": "STR_066",
+    "instruction": "Fetch the file to review its contents before the meeting.",
+    "correct_tool": "gdrive_get_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_rename_file",
+      "airtable_delete_record",
+      "paypal_create_subscription"
+    ]
+  },
+  {
+    "task_id": "MSG_058",
+    "instruction": "Update the user status to show the team member is out of office.",
+    "correct_tool": "slack_set_user_status",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_delete_message",
+      "sendgrid_create_api_key",
+      "s3_get_object_metadata"
+    ]
+  },
+  {
+    "task_id": "MSG_059",
+    "instruction": "Upload the file so it can be shared in the conversation.",
+    "correct_tool": "slack_upload_file",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_delete_file",
+      "twilio_delete_recording",
+      "auth0_list_clients"
+    ]
+  },
+  {
+    "task_id": "PAY_054",
+    "instruction": "Finalize the transaction by capturing the charge.",
+    "correct_tool": "stripe_capture_charge",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_product",
+      "paypal_get_order",
+      "gdrive_create_folder"
+    ]
+  },
+  {
+    "task_id": "CRM_051",
+    "instruction": "Pull the list of triggers for the quarterly business review.",
+    "correct_tool": "zendesk_list_triggers",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_list_satisfaction_ratings",
+      "hubspot_list_contacts",
+      "mixpanel_update_user_profile"
+    ]
+  },
+  {
+    "task_id": "STR_067",
+    "instruction": "Set up a record to store the files for this initiative.",
+    "correct_tool": "airtable_create_record",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_list_tables",
+      "gdrive_delete_comment",
+      "github_protect_branch"
+    ]
+  },
+  {
+    "task_id": "IDN_022",
+    "instruction": "Create a role as part of the onboarding workflow.",
+    "correct_tool": "auth0_create_role",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_remove_role",
+      "amplitude_get_project_info",
+      "sendgrid_create_list"
+    ]
+  },
+  {
+    "task_id": "STR_068",
+    "instruction": "Remove the record that is no longer needed to free up space.",
+    "correct_tool": "airtable_delete_record",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "airtable_get_record",
+      "notion_create_comment",
+      "auth0_assign_role"
+    ]
+  },
+  {
+    "task_id": "STR_069",
+    "instruction": "Show the trash to find the document the client requested.",
+    "correct_tool": "gdrive_list_trash",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_rename_file",
+      "docusign_get_envelope",
+      "hubspot_merge_contacts"
+    ]
+  },
+  {
+    "task_id": "PAY_055",
+    "instruction": "The customer is asking about their account info \u2014 fetch the record.",
+    "correct_tool": "paypal_get_account_info",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_delete_webhook",
+      "stripe_create_payout",
+      "s3_get_object_metadata"
+    ]
+  },
+  {
+    "task_id": "PAY_056",
+    "instruction": "Confirm the order after verifying all payment details.",
+    "correct_tool": "paypal_confirm_order",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_send_invoice",
+      "stripe_create_product",
+      "slack_pin_message"
+    ]
+  },
+  {
+    "task_id": "PAY_057",
+    "instruction": "Invalidate the invoice as it is no longer payable.",
+    "correct_tool": "stripe_void_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_list_webhooks",
+      "paypal_deactivate_plan",
+      "jira_archive_version"
+    ]
+  },
+  {
+    "task_id": "PAY_058",
+    "instruction": "Pull all balance history for the auditor's review.",
+    "correct_tool": "stripe_list_balance_transactions",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_create_subscription",
+      "hubspot_get_contact"
+    ]
+  },
+  {
+    "task_id": "MSG_060",
+    "instruction": "List the WhatsApp messages to find the one sent to the customer.",
+    "correct_tool": "twilio_list_whatsapp_messages",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_subaccounts",
+      "slack_share_file",
+      "s3_get_object"
+    ]
+  },
+  {
+    "task_id": "MSG_061",
+    "instruction": "List the recordings to find the one sent to the customer.",
+    "correct_tool": "twilio_list_recordings",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_add_conversation_participant",
+      "sendgrid_get_template",
+      "zendesk_list_groups"
+    ]
+  },
+  {
+    "task_id": "PAY_059",
+    "instruction": "Finance needs a subscription created for this account.",
+    "correct_tool": "paypal_create_subscription",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_list_transactions",
+      "stripe_search_customers",
+      "docusign_send_envelope"
+    ]
+  },
+  {
+    "task_id": "ANL_030",
+    "instruction": "Capture the event as part of the product funnel measurement.",
+    "correct_tool": "amplitude_track_event",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_get_chart",
+      "mixpanel_get_segmentation",
+      "stripe_list_invoices"
+    ]
+  },
+  {
+    "task_id": "STR_070",
+    "instruction": "Revoke the favourites so the former employee loses access.",
+    "correct_tool": "gdrive_remove_from_starred",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_list_trash",
+      "s3_set_versioning",
+      "zendesk_delete_organization"
+    ]
+  },
+  {
+    "task_id": "MSG_062",
+    "instruction": "Pin the important message so the team can find it easily.",
+    "correct_tool": "slack_pin_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_unpin_message",
+      "twilio_create_conversation",
+      "paypal_list_invoices"
+    ]
+  },
+  {
+    "task_id": "CRM_052",
+    "instruction": "Delete the webhook for the churned account.",
+    "correct_tool": "zendesk_delete_webhook",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_search_tickets",
+      "hubspot_log_call",
+      "github_list_repos"
+    ]
+  },
+  {
+    "task_id": "MSG_063",
+    "instruction": "Provision a contact to organize communications for this initiative.",
+    "correct_tool": "sendgrid_create_contact",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_get_stats",
+      "twilio_list_recordings",
+      "auth0_search_users"
+    ]
+  },
+  {
+    "task_id": "CRM_053",
+    "instruction": "Show all webhooks so the sales team can prioritize outreach.",
+    "correct_tool": "zendesk_list_webhooks",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_delete_macro",
+      "hubspot_update_contact",
+      "github_trigger_workflow"
+    ]
+  },
+  {
+    "task_id": "DEV_071",
+    "instruction": "Attach a team member to provide additional context for the reviewers.",
+    "correct_tool": "github_add_team_member",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_get_user",
+      "jira_get_sprint",
+      "stripe_create_subscription"
+    ]
+  },
+  {
+    "task_id": "CRM_054",
+    "instruction": "Edit the user to reflect the latest status after the meeting.",
+    "correct_tool": "zendesk_update_user",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_delete_ticket",
+      "hubspot_search_companies",
+      "twilio_get_account"
+    ]
+  },
+  {
+    "task_id": "STR_071",
+    "instruction": "Duplicate the object to reuse it in another project.",
+    "correct_tool": "s3_copy_object",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_put_object",
+      "airtable_get_base",
+      "stripe_delete_coupon"
+    ]
+  },
+  {
+    "task_id": "DEV_072",
+    "instruction": "Attach a collaborator to provide additional context for the reviewers.",
+    "correct_tool": "github_add_collaborator",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_compare_commits",
+      "jira_get_issue",
+      "zendesk_get_ticket"
+    ]
+  },
+  {
+    "task_id": "STR_072",
+    "instruction": "Retrieve the document to share it with a stakeholder.",
+    "correct_tool": "docusign_get_document",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_get_status",
+      "notion_update_block",
+      "amplitude_query_api"
+    ]
+  },
+  {
+    "task_id": "STR_073",
+    "instruction": "Append new content to the blocks without overwriting existing text.",
+    "correct_tool": "notion_append_blocks",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_list_pages",
+      "gdrive_delete_file",
+      "jira_list_issues"
+    ]
+  },
+  {
+    "task_id": "PAY_060",
+    "instruction": "Suspend the subscription due to a compliance hold.",
+    "correct_tool": "paypal_suspend_subscription",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "paypal_create_webhook",
+      "stripe_get_customer",
+      "airtable_list_views"
+    ]
+  },
+  {
+    "task_id": "MSG_064",
+    "instruction": "List the messages to find the one sent to the customer.",
+    "correct_tool": "twilio_list_messages",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_delete_conversation",
+      "sendgrid_delete_contact",
+      "stripe_confirm_payment_intent"
+    ]
+  },
+  {
+    "task_id": "CRM_055",
+    "instruction": "Log the email to keep a record of the customer interaction.",
+    "correct_tool": "hubspot_log_email",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_create_contact",
+      "zendesk_search_users",
+      "github_add_label"
+    ]
+  },
+  {
+    "task_id": "MSG_065",
+    "instruction": "Remove the reaction that was added by mistake.",
+    "correct_tool": "slack_remove_reaction",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_delete_file",
+      "twilio_list_subaccounts",
+      "mixpanel_create_annotation"
+    ]
+  },
+  {
+    "task_id": "MSG_066",
+    "instruction": "List the flows to find the one sent to the customer.",
+    "correct_tool": "twilio_list_flows",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_delete_message",
+      "sendgrid_delete_api_key",
+      "jira_search_issues"
+    ]
+  },
+  {
+    "task_id": "CRM_056",
+    "instruction": "Look up the pipeline to prepare for the upcoming customer call.",
+    "correct_tool": "hubspot_get_pipeline",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_update_company",
+      "zendesk_add_comment",
+      "stripe_void_invoice"
+    ]
+  },
+  {
+    "task_id": "ANL_031",
+    "instruction": "Show all user segments the team has set up so far.",
+    "correct_tool": "mixpanel_list_cohorts",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_create_cohort",
+      "amplitude_create_annotation",
+      "notion_update_page"
+    ]
+  },
+  {
+    "task_id": "ANL_032",
+    "instruction": "The product team needs a new dashboard for the A/B test analysis.",
+    "correct_tool": "mixpanel_create_dashboard",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "mixpanel_create_cohort",
+      "amplitude_identify_user",
+      "paypal_confirm_order"
+    ]
+  },
+  {
+    "task_id": "IDN_023",
+    "instruction": "Retrieve the organization details for the quarterly security audit.",
+    "correct_tool": "auth0_get_organization",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_user",
+      "hubspot_list_deals",
+      "zendesk_get_ticket"
+    ]
+  },
+  {
+    "task_id": "CRM_057",
+    "instruction": "List all active views for the account manager's pipeline.",
+    "correct_tool": "zendesk_list_views",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_list_users",
+      "hubspot_update_task",
+      "paypal_suspend_subscription"
+    ]
+  },
+  {
+    "task_id": "DEV_073",
+    "instruction": "Edit the issue with findings from the code review.",
+    "correct_tool": "github_update_issue",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_add_label",
+      "jira_create_issue",
+      "gdrive_move_file"
+    ]
+  },
+  {
+    "task_id": "PAY_061",
+    "instruction": "Pull all charges for the auditor's review.",
+    "correct_tool": "stripe_list_charges",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_update_subscription",
+      "paypal_create_subscription",
+      "zendesk_add_user_to_group"
+    ]
+  },
+  {
+    "task_id": "DEV_074",
+    "instruction": "Search the issues for the error pattern reported by the customer.",
+    "correct_tool": "github_search_issues",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_delete_file",
+      "jira_search_issues",
+      "auth0_list_organizations"
+    ]
+  },
+  {
+    "task_id": "MSG_067",
+    "instruction": "Remove the pin from the message to declutter the channel header.",
+    "correct_tool": "slack_unpin_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_delete_message",
+      "twilio_create_conversation",
+      "auth0_list_connections"
+    ]
+  },
+  {
+    "task_id": "DEV_075",
+    "instruction": "Begin the next development cycle by starting the sprint.",
+    "correct_tool": "jira_start_sprint",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_list_boards",
+      "github_search_issues",
+      "auth0_delete_user"
+    ]
+  },
+  {
+    "task_id": "STR_074",
+    "instruction": "Configure the cors policy on the storage bucket for the new environment.",
+    "correct_tool": "s3_set_cors_policy",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_set_versioning",
+      "notion_search",
+      "github_create_webhook"
+    ]
+  },
+  {
+    "task_id": "DEV_076",
+    "instruction": "The engineering manager wants to see all releases for this sprint.",
+    "correct_tool": "github_list_releases",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_list_reviews",
+      "jira_list_issues",
+      "zendesk_delete_user"
+    ]
+  },
+  {
+    "task_id": "PAY_062",
+    "instruction": "Finance needs a refund created for this account.",
+    "correct_tool": "stripe_create_refund",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_payout",
+      "paypal_suspend_subscription",
+      "amplitude_create_annotation"
+    ]
+  },
+  {
+    "task_id": "DEV_077",
+    "instruction": "Fetch the board to review its current state before the stand-up.",
+    "correct_tool": "jira_get_board",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_release_version",
+      "github_create_webhook",
+      "s3_delete_lifecycle_policy"
+    ]
+  },
+  {
+    "task_id": "IDN_024",
+    "instruction": "Retrieve the role details for the quarterly security audit.",
+    "correct_tool": "auth0_get_role",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_user_roles",
+      "stripe_finalize_invoice",
+      "jira_release_version"
+    ]
+  },
+  {
+    "task_id": "STR_075",
+    "instruction": "Delete the bucket left over from the cancelled project.",
+    "correct_tool": "s3_delete_bucket",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "s3_get_object_metadata",
+      "gdrive_list_revisions",
+      "amplitude_get_cohort"
+    ]
+  },
+  {
+    "task_id": "CRM_058",
+    "instruction": "List all active macros for the account manager's pipeline.",
+    "correct_tool": "zendesk_list_macros",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_get_view",
+      "hubspot_update_task",
+      "twilio_create_conversation"
+    ]
+  },
+  {
+    "task_id": "IDN_025",
+    "instruction": "Fetch the client to investigate the failed login attempt.",
+    "correct_tool": "auth0_get_client",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_create_role",
+      "notion_append_blocks",
+      "paypal_list_plans"
+    ]
+  },
+  {
+    "task_id": "STR_076",
+    "instruction": "Download the completed for offline review before the client meeting.",
+    "correct_tool": "docusign_download_completed",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_create_template",
+      "airtable_bulk_create_records",
+      "stripe_resume_subscription"
+    ]
+  },
+  {
+    "task_id": "DEV_078",
+    "instruction": "Find a repos related to this feature area to avoid duplicating work.",
+    "correct_tool": "github_search_repos",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_list_commits",
+      "jira_update_issue",
+      "docusign_get_status"
+    ]
+  },
+  {
+    "task_id": "STR_077",
+    "instruction": "Remove the folder that is no longer needed to free up space.",
+    "correct_tool": "gdrive_delete_folder",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "gdrive_get_file",
+      "s3_list_objects",
+      "jira_delete_project"
+    ]
+  },
+  {
+    "task_id": "MSG_068",
+    "instruction": "Delete the message to clean up the conversation history.",
+    "correct_tool": "twilio_delete_message",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "twilio_list_recordings",
+      "sendgrid_update_template",
+      "hubspot_delete_deal"
+    ]
+  },
+  {
+    "task_id": "STR_078",
+    "instruction": "Transfer the file to cloud storage for backup.",
+    "correct_tool": "gdrive_upload_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_get_file",
+      "airtable_list_records",
+      "jira_list_issues"
+    ]
+  },
+  {
+    "task_id": "STR_079",
+    "instruction": "Include the document in the workflow to complete the process.",
+    "correct_tool": "docusign_add_document",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_get_status",
+      "gdrive_move_file",
+      "hubspot_get_pipeline"
+    ]
+  },
+  {
+    "task_id": "STR_080",
+    "instruction": "Edit the field to reflect the latest approved changes.",
+    "correct_tool": "airtable_update_field",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "airtable_update_table",
+      "gdrive_list_permissions",
+      "slack_list_channels"
+    ]
+  },
+  {
+    "task_id": "CRM_059",
+    "instruction": "Create a user to start tracking this customer relationship.",
+    "correct_tool": "zendesk_create_user",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_update_macro",
+      "hubspot_log_email",
+      "sendgrid_delete_list"
+    ]
+  },
+  {
+    "task_id": "DEV_079",
+    "instruction": "Move the repo to a different organization.",
+    "correct_tool": "github_transfer_repo",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_list_reviews",
+      "jira_delete_comment",
+      "auth0_update_client"
+    ]
+  },
+  {
+    "task_id": "STR_081",
+    "instruction": "Download the file to send to the stakeholder offline.",
+    "correct_tool": "gdrive_export_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_create_folder",
+      "docusign_list_templates",
+      "github_search_code"
+    ]
+  },
+  {
+    "task_id": "CRM_060",
+    "instruction": "Search for the contacts associated with this email address.",
+    "correct_tool": "hubspot_search_contacts",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_log_call",
+      "zendesk_delete_macro",
+      "stripe_create_coupon"
+    ]
+  },
+  {
+    "task_id": "PAY_063",
+    "instruction": "Move the retired product to the archive.",
+    "correct_tool": "stripe_archive_product",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_list_prices",
+      "paypal_get_account_info",
+      "jira_list_worklogs"
+    ]
+  },
+  {
+    "task_id": "CRM_061",
+    "instruction": "Document the meeting in the CRM after the meeting.",
+    "correct_tool": "hubspot_log_meeting",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_delete_company",
+      "zendesk_assign_ticket",
+      "stripe_create_coupon"
+    ]
+  },
+  {
+    "task_id": "IDN_026",
+    "instruction": "Remove the role as part of the offboarding checklist.",
+    "correct_tool": "auth0_delete_role",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_list_clients",
+      "jira_get_project",
+      "sendgrid_get_click_stats"
+    ]
+  },
+  {
+    "task_id": "STR_082",
+    "instruction": "Show the objects to find the document the client requested.",
+    "correct_tool": "s3_list_objects",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_put_lifecycle_policy",
+      "gdrive_reply_to_comment",
+      "auth0_create_client"
+    ]
+  },
+  {
+    "task_id": "DEV_080",
+    "instruction": "Find a code related to this feature area to avoid duplicating work.",
+    "correct_tool": "github_search_code",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_list_reviews",
+      "jira_delete_attachment",
+      "stripe_get_invoice"
+    ]
+  },
+  {
+    "task_id": "IDN_027",
+    "instruction": "Temporarily restrict the user pending a security investigation.",
+    "correct_tool": "auth0_block_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "auth0_get_logs",
+      "github_star_repo",
+      "hubspot_list_tasks"
+    ]
+  },
+  {
+    "task_id": "DEV_081",
+    "instruction": "A developer needs a new issue to track the upcoming work.",
+    "correct_tool": "github_create_issue",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_fork_repo",
+      "jira_list_boards",
+      "zendesk_create_macro"
+    ]
+  },
+  {
+    "task_id": "DEV_082",
+    "instruction": "Archive the old version to keep the project history clean.",
+    "correct_tool": "jira_archive_version",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_get_issue",
+      "github_delete_branch",
+      "gdrive_update_file"
+    ]
+  },
+  {
+    "task_id": "MSG_069",
+    "instruction": "Create a channel for the new support queue.",
+    "correct_tool": "slack_create_channel",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_list_reminders",
+      "twilio_cancel_call",
+      "stripe_pause_subscription"
+    ]
+  },
+  {
+    "task_id": "DEV_083",
+    "instruction": "A team member needs the repo details to continue their work.",
+    "correct_tool": "github_get_repo",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_transfer_repo",
+      "jira_update_project",
+      "docusign_delete_recipient"
+    ]
+  },
+  {
+    "task_id": "MSG_070",
+    "instruction": "Queue the message for delivery during peak engagement hours.",
+    "correct_tool": "slack_schedule_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_get_user",
+      "twilio_delete_message",
+      "mixpanel_track_event"
+    ]
+  },
+  {
+    "task_id": "CRM_062",
+    "instruction": "A sales rep just finished a call \u2014 log the new task in the system.",
+    "correct_tool": "hubspot_create_task",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_complete_task",
+      "zendesk_close_ticket",
+      "gdrive_share_file"
+    ]
+  },
+  {
+    "task_id": "MSG_071",
+    "instruction": "List the API credentials to find the one sent to the customer.",
+    "correct_tool": "sendgrid_list_api_keys",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_search_contacts",
+      "slack_unpin_message",
+      "hubspot_get_contact"
+    ]
+  },
+  {
+    "task_id": "STR_083",
+    "instruction": "List all records in the project workspace.",
+    "correct_tool": "airtable_list_records",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_bulk_create_records",
+      "gdrive_update_permission",
+      "zendesk_close_ticket"
+    ]
+  },
+  {
+    "task_id": "STR_084",
+    "instruction": "Set up a comment to store the files for this initiative.",
+    "correct_tool": "notion_create_comment",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_delete_block",
+      "airtable_bulk_update_records",
+      "hubspot_list_activities"
+    ]
+  },
+  {
+    "task_id": "PAY_064",
+    "instruction": "Pull all webhooks for the auditor's review.",
+    "correct_tool": "stripe_list_webhooks",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "stripe_update_subscription",
+      "paypal_authorize_order",
+      "github_get_commit"
+    ]
+  },
+  {
+    "task_id": "STR_085",
+    "instruction": "Show the file version history to find the document the client requested.",
+    "correct_tool": "s3_list_object_versions",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_list_objects",
+      "airtable_get_view",
+      "zendesk_delete_ticket"
+    ]
+  },
+  {
+    "task_id": "STR_086",
+    "instruction": "Edit the database to reflect the latest approved changes.",
+    "correct_tool": "notion_update_database",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "notion_search",
+      "gdrive_list_permissions",
+      "github_add_team_member"
+    ]
+  },
+  {
+    "task_id": "DEV_084",
+    "instruction": "The issue needs an owner \u2014 assign it to a team member.",
+    "correct_tool": "jira_assign_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_create_worklog",
+      "github_get_commit",
+      "gdrive_copy_file"
+    ]
+  },
+  {
+    "task_id": "ANL_033",
+    "instruction": "Segment identify to understand usage patterns across plans.",
+    "correct_tool": "amplitude_group_identify",
+    "service": "amplitude",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "amplitude_query_api",
+      "mixpanel_export_data",
+      "github_create_review"
+    ]
+  },
+  {
+    "task_id": "DEV_085",
+    "instruction": "The engineering manager wants to see all pipeline runs for this sprint.",
+    "correct_tool": "github_list_workflow_runs",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_create_branch",
+      "jira_list_issues",
+      "hubspot_log_meeting"
+    ]
+  },
+  {
+    "task_id": "IDN_028",
+    "instruction": "Look up the user to verify the user's current access level.",
+    "correct_tool": "auth0_get_user",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_create_organization",
+      "stripe_expire_checkout_session",
+      "notion_get_block"
+    ]
+  },
+  {
+    "task_id": "PAY_065",
+    "instruction": "Process payment for the invoice that is now due.",
+    "correct_tool": "stripe_pay_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_create_checkout_session",
+      "paypal_list_invoices",
+      "notion_archive_page"
+    ]
+  },
+  {
+    "task_id": "PAY_066",
+    "instruction": "The customer updated their billing details \u2014 reflect the change in the product.",
+    "correct_tool": "stripe_update_product",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_archive_product",
+      "paypal_list_plans",
+      "sendgrid_create_api_key"
+    ]
+  },
+  {
+    "task_id": "IDN_029",
+    "instruction": "Edit the connection after the department restructure.",
+    "correct_tool": "auth0_update_connection",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_remove_role",
+      "amplitude_list_charts",
+      "amplitude_get_chart"
+    ]
+  },
+  {
+    "task_id": "DEV_086",
+    "instruction": "A team member needs the code review request details to continue their work.",
+    "correct_tool": "github_get_pull_request",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_delete_team",
+      "jira_create_board",
+      "auth0_update_connection"
+    ]
+  },
+  {
+    "task_id": "CRM_063",
+    "instruction": "Add a user to group to document the outcome of the support call.",
+    "correct_tool": "zendesk_add_user_to_group",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_add_comment",
+      "hubspot_merge_contacts",
+      "s3_delete_object"
+    ]
+  },
+  {
+    "task_id": "MSG_072",
+    "instruction": "Retrieve the permalink to check its delivery and open status.",
+    "correct_tool": "slack_get_permalink",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_archive_channel",
+      "twilio_buy_phone_number",
+      "stripe_create_subscription"
+    ]
+  },
+  {
+    "task_id": "CRM_064",
+    "instruction": "Delete the company for the churned account.",
+    "correct_tool": "hubspot_delete_company",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "hubspot_close_deal",
+      "zendesk_delete_webhook",
+      "slack_list_channels"
+    ]
+  },
+  {
+    "task_id": "CRM_065",
+    "instruction": "Edit the deal to reflect the latest status after the meeting.",
+    "correct_tool": "hubspot_update_deal",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_list_activities",
+      "zendesk_create_webhook",
+      "paypal_activate_plan"
+    ]
+  },
+  {
+    "task_id": "STR_087",
+    "instruction": "Remove the permission from the document.",
+    "correct_tool": "gdrive_remove_permission",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_create_file",
+      "s3_put_bucket_policy",
+      "slack_list_reactions"
+    ]
+  },
+  {
+    "task_id": "DEV_087",
+    "instruction": "Attach a comment to provide additional context for the reviewers.",
+    "correct_tool": "jira_add_comment",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_list_users",
+      "github_update_issue",
+      "docusign_get_envelope"
+    ]
+  },
+  {
+    "task_id": "CRM_066",
+    "instruction": "Edit the organization to reflect the latest status after the meeting.",
+    "correct_tool": "zendesk_update_organization",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_webhooks",
+      "hubspot_update_contact",
+      "paypal_pay_invoice"
+    ]
+  },
+  {
+    "task_id": "PAY_067",
+    "instruction": "The order is confirmed; create a coupon to collect the funds.",
+    "correct_tool": "stripe_create_coupon",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_list_coupons",
+      "paypal_capture_order",
+      "hubspot_merge_contacts"
+    ]
+  },
+  {
+    "task_id": "MSG_073",
+    "instruction": "List the users to find the one sent to the customer.",
+    "correct_tool": "slack_list_users",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_pin_message",
+      "twilio_create_conversation",
+      "jira_list_users"
+    ]
+  },
+  {
+    "task_id": "PAY_068",
+    "instruction": "Generate a report of all invoices for the current billing period.",
+    "correct_tool": "paypal_list_invoices",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_list_payments",
+      "stripe_create_webhook",
+      "auth0_get_stats"
+    ]
+  },
+  {
+    "task_id": "CRM_067",
+    "instruction": "Retrieve the user to review the account history.",
+    "correct_tool": "zendesk_get_user",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_get_satisfaction_rating",
+      "hubspot_search_contacts",
+      "airtable_create_field"
+    ]
+  },
+  {
+    "task_id": "MSG_074",
+    "instruction": "Retrieve the message to check its delivery and open status.",
+    "correct_tool": "twilio_get_message",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_list_conversations",
+      "sendgrid_create_template",
+      "stripe_create_refund"
+    ]
+  },
+  {
+    "task_id": "ANL_034",
+    "instruction": "Pull the event metrics to include in the weekly performance review.",
+    "correct_tool": "mixpanel_get_event_stats",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_create_dashboard",
+      "amplitude_group_identify",
+      "jira_create_project"
+    ]
+  },
+  {
+    "task_id": "PAY_069",
+    "instruction": "The billing cycle is closing \u2014 finalize the invoice and send it to the customer.",
+    "correct_tool": "stripe_finalize_invoice",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_delete_customer",
+      "paypal_get_invoice",
+      "notion_archive_page"
+    ]
+  },
+  {
+    "task_id": "STR_088",
+    "instruction": "Copy the file to create a backup before making edits.",
+    "correct_tool": "gdrive_copy_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_create_folder",
+      "docusign_list_templates",
+      "jira_delete_issue"
+    ]
+  },
+  {
+    "task_id": "DEV_088",
+    "instruction": "Revoke access by removing the team member from the project.",
+    "correct_tool": "github_remove_team_member",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_pull_request",
+      "jira_list_comments",
+      "gdrive_update_permission"
+    ]
+  },
+  {
+    "task_id": "CRM_068",
+    "instruction": "Delete the contact for the churned account.",
+    "correct_tool": "hubspot_delete_contact",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "hubspot_search_contacts",
+      "zendesk_create_trigger",
+      "jira_create_project"
+    ]
+  },
+  {
+    "task_id": "DEV_089",
+    "instruction": "The engineering manager wants to see all users for this sprint.",
+    "correct_tool": "jira_list_users",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_list_worklogs",
+      "github_update_file",
+      "slack_schedule_message"
+    ]
+  },
+  {
+    "task_id": "STR_089",
+    "instruction": "Add a favourites to the document before sending it for signature.",
+    "correct_tool": "gdrive_add_to_starred",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "gdrive_copy_file",
+      "s3_delete_object",
+      "zendesk_update_macro"
+    ]
+  },
+  {
+    "task_id": "MSG_075",
+    "instruction": "Handle the message operation as required.",
+    "correct_tool": "slack_update_message",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "slack_delete_reminder",
+      "sendgrid_send_bulk_email",
+      "stripe_delete_coupon"
+    ]
+  },
+  {
+    "task_id": "PAY_070",
+    "instruction": "A customer is ready to pay \u2014 set up a new webhook to begin the transaction.",
+    "correct_tool": "stripe_create_webhook",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_delete_coupon",
+      "paypal_delete_webhook",
+      "mixpanel_get_retention"
+    ]
+  },
+  {
+    "task_id": "MSG_076",
+    "instruction": "Look up the user for the audit trail.",
+    "correct_tool": "slack_get_user",
+    "service": "slack",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "slack_list_reactions",
+      "sendgrid_delete_list",
+      "s3_list_buckets"
+    ]
+  },
+  {
+    "task_id": "STR_090",
+    "instruction": "Delete the storage lifecycle rule left over from the cancelled project.",
+    "correct_tool": "s3_delete_lifecycle_policy",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "s3_list_object_versions",
+      "docusign_download_completed",
+      "hubspot_list_tasks"
+    ]
+  },
+  {
+    "task_id": "STR_091",
+    "instruction": "Add a recipient to the document before sending it for signature.",
+    "correct_tool": "docusign_add_recipient",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "docusign_get_document",
+      "s3_enable_encryption",
+      "zendesk_suspend_user"
+    ]
+  },
+  {
+    "task_id": "DEV_090",
+    "instruction": "Edit the worklog with findings from the code review.",
+    "correct_tool": "jira_update_worklog",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_start_sprint",
+      "github_list_workflows",
+      "sendgrid_delete_list"
+    ]
+  },
+  {
+    "task_id": "ANL_035",
+    "instruction": "Query the insights to generate the custom performance report.",
+    "correct_tool": "mixpanel_query_insights",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_create_user_profile",
+      "amplitude_export_events",
+      "stripe_list_products"
+    ]
+  },
+  {
+    "task_id": "DEV_091",
+    "instruction": "Add a label to help categorize this item for the team.",
+    "correct_tool": "github_add_label",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_protect_branch",
+      "jira_delete_attachment",
+      "hubspot_merge_contacts"
+    ]
+  },
+  {
+    "task_id": "PAY_071",
+    "instruction": "Show every transactions associated with this account.",
+    "correct_tool": "paypal_list_transactions",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_activate_plan",
+      "stripe_create_subscription",
+      "twilio_get_flow"
+    ]
+  },
+  {
+    "task_id": "STR_092",
+    "instruction": "Pull the view for the compliance audit trail.",
+    "correct_tool": "airtable_get_view",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_list_tables",
+      "notion_append_blocks",
+      "auth0_get_organization"
+    ]
+  },
+  {
+    "task_id": "DEV_092",
+    "instruction": "Show all open worklogs so the team can plan capacity.",
+    "correct_tool": "jira_list_worklogs",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "jira_get_sprint",
+      "github_create_issue",
+      "paypal_activate_plan"
+    ]
+  },
+  {
+    "task_id": "STR_093",
+    "instruction": "Fetch the public access settings to review its contents before the meeting.",
+    "correct_tool": "s3_get_public_access_block",
+    "service": "s3",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "s3_enable_encryption",
+      "docusign_delete_recipient",
+      "paypal_capture_order"
+    ]
+  },
+  {
+    "task_id": "IDN_030",
+    "instruction": "Retrieve the connection details for the quarterly security audit.",
+    "correct_tool": "auth0_get_connection",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "auth0_get_client",
+      "twilio_list_calls",
+      "paypal_get_invoice"
+    ]
+  },
+  {
+    "task_id": "PAY_072",
+    "instruction": "Pull all payments for the auditor's review.",
+    "correct_tool": "paypal_list_payments",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_activate_plan",
+      "stripe_update_subscription",
+      "jira_list_comments"
+    ]
+  },
+  {
+    "task_id": "STR_094",
+    "instruction": "Remove the file that is no longer needed to free up space.",
+    "correct_tool": "gdrive_delete_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "gdrive_get_file",
+      "s3_delete_bucket",
+      "slack_get_user_profile"
+    ]
+  },
+  {
+    "task_id": "ANL_036",
+    "instruction": "Retrieve the dashboard for the board presentation.",
+    "correct_tool": "mixpanel_get_dashboard",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_cohorts",
+      "amplitude_get_chart",
+      "s3_copy_object"
+    ]
+  },
+  {
+    "task_id": "PAY_073",
+    "instruction": "The customer changed their mind \u2014 cancel the pending payment transaction immediately.",
+    "correct_tool": "stripe_cancel_payment_intent",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_get_invoice",
+      "paypal_list_payments",
+      "mixpanel_get_retention"
+    ]
+  },
+  {
+    "task_id": "STR_095",
+    "instruction": "Move the old page to the archive to declutter the workspace.",
+    "correct_tool": "notion_archive_page",
+    "service": "notion",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "notion_get_page",
+      "gdrive_delete_comment",
+      "twilio_list_flows"
+    ]
+  },
+  {
+    "task_id": "STR_096",
+    "instruction": "Relocate the file to the correct team folder.",
+    "correct_tool": "gdrive_move_file",
+    "service": "gdrive",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "gdrive_remove_permission",
+      "s3_put_bucket_policy",
+      "twilio_delete_flow"
+    ]
+  },
+  {
+    "task_id": "DEV_093",
+    "instruction": "A developer needs a new issue to track the upcoming work.",
+    "correct_tool": "jira_create_issue",
+    "service": "jira",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "jira_assign_issue",
+      "github_create_issue",
+      "auth0_list_connections"
+    ]
+  },
+  {
+    "task_id": "CRM_069",
+    "instruction": "Pull the list of satisfaction scores for the quarterly business review.",
+    "correct_tool": "zendesk_list_satisfaction_ratings",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_list_users",
+      "hubspot_merge_contacts",
+      "mixpanel_get_event_stats"
+    ]
+  },
+  {
+    "task_id": "MSG_077",
+    "instruction": "Look up the email open metrics for the audit trail.",
+    "correct_tool": "sendgrid_get_open_stats",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "sendgrid_send_bulk_email",
+      "slack_get_permalink",
+      "jira_update_issue"
+    ]
+  },
+  {
+    "task_id": "DEV_094",
+    "instruction": "Browse the workflows to find the one causing the build failure.",
+    "correct_tool": "github_list_workflows",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_file_content",
+      "jira_update_worklog",
+      "twilio_get_conversation"
+    ]
+  },
+  {
+    "task_id": "MSG_078",
+    "instruction": "Create a template for the new support queue.",
+    "correct_tool": "sendgrid_create_template",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_send_email",
+      "twilio_get_account",
+      "paypal_authorize_order"
+    ]
+  },
+  {
+    "task_id": "STR_097",
+    "instruction": "Fetch the envelope to review its contents before the meeting.",
+    "correct_tool": "docusign_get_envelope",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_void_envelope",
+      "notion_list_pages",
+      "mixpanel_list_events"
+    ]
+  },
+  {
+    "task_id": "IDN_031",
+    "instruction": "Set up a connection so the contractor can access the required systems.",
+    "correct_tool": "auth0_create_connection",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_send_password_reset",
+      "slack_delete_scheduled_message",
+      "stripe_pay_invoice"
+    ]
+  },
+  {
+    "task_id": "CRM_070",
+    "instruction": "Pull the list of activities for the quarterly business review.",
+    "correct_tool": "hubspot_list_activities",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "hubspot_get_contact",
+      "zendesk_delete_webhook",
+      "auth0_send_verification_email"
+    ]
+  },
+  {
+    "task_id": "IDN_032",
+    "instruction": "Provision a organization for the new employee joining the team today.",
+    "correct_tool": "auth0_create_organization",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_update_connection",
+      "zendesk_delete_organization",
+      "jira_search_issues"
+    ]
+  },
+  {
+    "task_id": "DEV_095",
+    "instruction": "The fix has been deployed \u2014 close the code review request.",
+    "correct_tool": "github_close_pull_request",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_create_issue",
+      "jira_list_worklogs",
+      "hubspot_log_call"
+    ]
+  },
+  {
+    "task_id": "CRM_071",
+    "instruction": "Use the macro to streamline the repetitive support workflow.",
+    "correct_tool": "zendesk_apply_macro",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "zendesk_create_trigger",
+      "hubspot_list_tasks",
+      "mixpanel_create_dashboard"
+    ]
+  },
+  {
+    "task_id": "PAY_074",
+    "instruction": "A customer is ready to pay \u2014 set up a new subscription to begin the transaction.",
+    "correct_tool": "stripe_create_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_get_customer",
+      "paypal_authorize_order",
+      "zendesk_delete_organization"
+    ]
+  },
+  {
+    "task_id": "CRM_072",
+    "instruction": "Edit the contact to reflect the latest status after the meeting.",
+    "correct_tool": "hubspot_update_contact",
+    "service": "hubspot",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "hubspot_list_activities",
+      "zendesk_delete_organization",
+      "auth0_update_connection"
+    ]
+  },
+  {
+    "task_id": "MSG_079",
+    "instruction": "List the subaccounts to find the one sent to the customer.",
+    "correct_tool": "twilio_list_subaccounts",
+    "service": "twilio",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "twilio_get_account",
+      "slack_invite_to_channel",
+      "github_close_pull_request"
+    ]
+  },
+  {
+    "task_id": "DEV_096",
+    "instruction": "Pull up the release to investigate the reported regression.",
+    "correct_tool": "github_get_release",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "github_get_workflow_run",
+      "jira_update_issue",
+      "stripe_pay_invoice"
+    ]
+  },
+  {
+    "task_id": "DEV_097",
+    "instruction": "Assign the issue to the engineer who will fix it.",
+    "correct_tool": "github_assign_issue",
+    "service": "github",
+    "attributes": [
+      "developer"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "github_create_branch",
+      "jira_list_sprints",
+      "auth0_search_users"
+    ]
+  },
+  {
+    "task_id": "PAY_075",
+    "instruction": "Initiate a payout as part of the checkout workflow.",
+    "correct_tool": "stripe_create_payout",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_update_customer",
+      "paypal_get_subscription",
+      "auth0_get_user_roles"
+    ]
+  },
+  {
+    "task_id": "PAY_076",
+    "instruction": "The customer updated their billing details \u2014 reflect the change in the subscription.",
+    "correct_tool": "stripe_update_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "stripe_get_invoice",
+      "paypal_list_payments",
+      "amplitude_group_identify"
+    ]
+  },
+  {
+    "task_id": "PAY_077",
+    "instruction": "The order was flagged as fraudulent; cancel the subscription before it settles.",
+    "correct_tool": "stripe_cancel_subscription",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_delete_customer",
+      "paypal_pay_invoice",
+      "amplitude_list_charts"
+    ]
+  },
+  {
+    "task_id": "MSG_080",
+    "instruction": "Execute the update request for the template.",
+    "correct_tool": "sendgrid_update_template",
+    "service": "sendgrid",
+    "attributes": [
+      "messaging"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "sendgrid_list_contacts",
+      "twilio_cancel_call",
+      "jira_update_worklog"
+    ]
+  },
+  {
+    "task_id": "CRM_073",
+    "instruction": "Add a trigger from the latest marketing campaign lead.",
+    "correct_tool": "zendesk_create_trigger",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "zendesk_list_groups",
+      "hubspot_list_deals",
+      "twilio_list_conversation_participants"
+    ]
+  },
+  {
+    "task_id": "PAY_078",
+    "instruction": "The session timed out \u2014 expire the checkout session.",
+    "correct_tool": "stripe_expire_checkout_session",
+    "service": "stripe",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "stripe_list_refunds",
+      "paypal_get_account_info",
+      "github_create_branch"
+    ]
+  },
+  {
+    "task_id": "CRM_074",
+    "instruction": "Put the user on hold while the compliance team investigates.",
+    "correct_tool": "zendesk_suspend_user",
+    "service": "zendesk",
+    "attributes": [
+      "crm"
+    ],
+    "difficulty": "hard",
+    "distractor_cluster": [
+      "zendesk_list_organizations",
+      "hubspot_list_tasks",
+      "paypal_confirm_order"
+    ]
+  },
+  {
+    "task_id": "STR_098",
+    "instruction": "Browse the bases to locate the latest version of the report.",
+    "correct_tool": "airtable_list_bases",
+    "service": "airtable",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "airtable_bulk_create_records",
+      "notion_get_block",
+      "amplitude_get_retention_analysis"
+    ]
+  },
+  {
+    "task_id": "STR_099",
+    "instruction": "Show the templates to find the document the client requested.",
+    "correct_tool": "docusign_list_templates",
+    "service": "docusign",
+    "attributes": [
+      "storage"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "docusign_get_status",
+      "s3_enable_encryption",
+      "stripe_create_subscription"
+    ]
+  },
+  {
+    "task_id": "IDN_033",
+    "instruction": "Grant the role to the user so they can access the required resources.",
+    "correct_tool": "auth0_assign_role",
+    "service": "auth0",
+    "attributes": [
+      "identity"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "auth0_update_client",
+      "hubspot_get_pipeline",
+      "gdrive_add_to_starred"
+    ]
+  },
+  {
+    "task_id": "PAY_079",
+    "instruction": "Finance needs a order created for this account.",
+    "correct_tool": "paypal_create_order",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "medium",
+    "distractor_cluster": [
+      "paypal_delete_webhook",
+      "stripe_cancel_payment_intent",
+      "mixpanel_update_user_profile"
+    ]
+  },
+  {
+    "task_id": "ANL_037",
+    "instruction": "Fetch the retention results to share with the product team.",
+    "correct_tool": "mixpanel_get_retention",
+    "service": "mixpanel",
+    "attributes": [
+      "analytics"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "mixpanel_list_funnels",
+      "amplitude_list_exports",
+      "hubspot_delete_deal"
+    ]
+  },
+  {
+    "task_id": "PAY_080",
+    "instruction": "Pull up the subscription before issuing the refund.",
+    "correct_tool": "paypal_get_subscription",
+    "service": "paypal",
+    "attributes": [
+      "payments"
+    ],
+    "difficulty": "easy",
+    "distractor_cluster": [
+      "paypal_confirm_order",
+      "stripe_create_checkout_session",
+      "slack_list_pins"
+    ]
+  }
+]

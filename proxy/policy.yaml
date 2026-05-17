@@ -1,0 +1,58 @@
+version: "2.0"
+description: >
+  ABAC policy mapping agent roles to allowed semantic business attributes.
+  Clients pass ?attribute=<name> in the URL; the proxy enforces this mapping
+  and returns 403 if the requesting role is not permitted for that attribute.
+
+  Core governed attributes (enterprise roles):
+    payments, developer, messaging, crm, analytics, storage, identity
+
+  Extended registry attributes (present in registry but no dedicated agent role;
+  serve as cross-domain noise in the baseline condition):
+    entertainment, travel, health, news, iot
+
+roles:
+  payments_agent:
+    description: "Billing and payment processing agent"
+    allowed_attributes: [payments]
+
+  dev_agent:
+    description: "Software development and CI/CD agent"
+    allowed_attributes: [developer]
+
+  support_agent:
+    description: "Customer support and communications agent"
+    allowed_attributes: [crm, messaging]
+
+  data_agent:
+    description: "Analytics and reporting agent"
+    allowed_attributes: [analytics]
+
+  content_agent:
+    description: "Document and file management agent"
+    allowed_attributes: [storage]
+
+  identity_agent:
+    description: "User and access management agent"
+    allowed_attributes: [identity]
+
+  hr_agent:
+    description: "HR operations agent"
+    allowed_attributes: [identity, crm]
+
+  ops_agent:
+    description: "Operations and logistics agent"
+    allowed_attributes: [travel, iot]
+
+  media_agent:
+    description: "Content and media agent"
+    allowed_attributes: [entertainment, news, storage]
+
+  wellness_agent:
+    description: "Health and wellness agent"
+    allowed_attributes: [health]
+
+  admin_agent:
+    description: "Administrator — full access to all attributes"
+    allowed_attributes: [payments, developer, messaging, crm, identity, analytics,
+                         storage, entertainment, travel, health, news, iot]

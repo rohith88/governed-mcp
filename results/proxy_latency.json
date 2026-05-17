@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-05-17T15:19:41.969451",
+  "n_requests": 1000,
+  "results": {
+    "JWT": {
+      "median_ms": 0.041,
+      "p95_ms": 0.06,
+      "n": 1000
+    },
+    "AttrAuth": {
+      "median_ms": 0.002,
+      "p95_ms": 0.002,
+      "n": 1000
+    },
+    "MongoDB": {
+      "median_ms": 1.588,
+      "p95_ms": 3.666,
+      "n": 1000
+    },
+    "ABAC filter": {
+      "median_ms": 0.051,
+      "p95_ms": 0.058,
+      "n": 1000
+    },
+    "Total": {
+      "median_ms": 1.72,
+      "p95_ms": 3.807,
+      "n": 1000
+    }
+  }
+}

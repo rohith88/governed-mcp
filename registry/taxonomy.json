@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Governed MCP Attribute Taxonomy",
+  "version": "1.0.0",
+  "description": "Frozen label taxonomy for tool discovery experiments. Do not modify after benchmark freeze.",
+  "dimensions": {
+    "env": {
+      "description": "Deployment environment the tool operates on",
+      "values": ["dev", "staging", "prod", "all-envs"],
+      "notes": "Tools with 'all-envs' match any environment query"
+    },
+    "op_class": {
+      "description": "Primary operation class performed by the tool",
+      "values": ["read", "write", "delete", "admin", "audit"],
+      "notes": "Mutually exclusive; tools have exactly one op_class"
+    },
+    "risk": {
+      "description": "Risk tier of the tool's operation",
+      "values": ["low-risk", "medium-risk", "high-risk", "destructive"],
+      "mapping": {
+        "read": ["low-risk", "medium-risk"],
+        "write": ["low-risk", "medium-risk", "high-risk"],
+        "delete": ["medium-risk", "high-risk", "destructive"],
+        "admin": ["high-risk", "destructive"],
+        "audit": ["low-risk"]
+      },
+      "notes": "Risk must be consistent with op_class per mapping above"
+    },
+    "domain": {
+      "description": "Functional domain of the tool",
+      "values": ["database", "filesystem", "api", "cicd", "iam"],
+      "full_names": {
+        "database": "Database Operations",
+        "filesystem": "File System / Storage",
+        "api": "API / Webhook Management",
+        "cicd": "Code Execution / CI-CD",
+        "iam": "Identity and Access"
+      }
+    }
+  },
+  "naming_convention": {
+    "template": "{env}_{domain}_{operation}_{qualifier?}",
+    "examples": [
+      "staging_db_backup",
+      "prod_db_backup_full",
+      "dev_filesystem_read_logs",
+      "prod_iam_delete_user",
+      "staging_api_write_webhook_config"
+    ],
+    "rules": [
+      "All lowercase with underscores",
+      "env prefix always first",
+      "domain second",
+      "operation third",
+      "optional qualifier last (e.g., 'full', 'incremental', 'bulk')"
+    ]
+  },
+  "distractor_tiers": {
+    "T1": {
+      "description": "Same operation, different environment (hardest distractors)",
+      "example": "prod_db_backup vs staging_db_backup"
+    },
+    "T2": {
+      "description": "Same domain, different operation",
+      "example": "staging_db_backup vs staging_db_restore"
+    },
+    "T3": {
+      "description": "Cross-domain similar name",
+      "example": "staging_db_backup vs staging_filesystem_backup"
+    }
+  },
+  "agent_roles": {
+    "dev_agent": {
+      "description": "Development environment agent — read/write access to dev only",
+      "allowed_envs": ["dev", "all-envs"],
+      "allowed_op_classes": ["read", "write", "audit"],
+      "allowed_risk": ["low-risk", "medium-risk"],
+      "allowed_domains": ["database", "filesystem", "api", "cicd", "iam"]
+    },
+    "staging_agent": {
+      "description": "Staging environment agent — read/write/admin access to staging",
+      "allowed_envs": ["staging", "all-envs"],
+      "allowed_op_classes": ["read", "write", "admin", "audit"],
+      "allowed_risk": ["low-risk", "medium-risk", "high-risk"],
+      "allowed_domains": ["database", "filesystem", "api", "cicd", "iam"]
+    },
+    "prod_agent": {
+      "description": "Production read-only agent — audit and read access to prod",
+      "allowed_envs": ["prod", "all-envs"],
+      "allowed_op_classes": ["read", "audit"],
+      "allowed_risk": ["low-risk"],
+      "allowed_domains": ["database", "filesystem", "api", "cicd", "iam"]
+    },
+    "admin_agent": {
+      "description": "Administrative agent — full access across all environments",
+      "allowed_envs": ["dev", "staging", "prod", "all-envs"],
+      "allowed_op_classes": ["read", "write", "delete", "admin", "audit"],
+      "allowed_risk": ["low-risk", "medium-risk", "high-risk", "destructive"],
+      "allowed_domains": ["database", "filesystem", "api", "cicd", "iam"]
+    },
+    "hr_agent": {
+      "description": "HR agent — IAM domain read access only",
+      "allowed_envs": ["dev", "staging", "prod", "all-envs"],
+      "allowed_op_classes": ["read", "audit"],
+      "allowed_risk": ["low-risk"],
+      "allowed_domains": ["iam"]
+    }
+  }
+}
