@@ -1,0 +1,87 @@
+% System diagram for Governed MCP Proxy — stacked vertical layout
+% Include in main.tex with: \input{system_diagram}
+
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+    node distance=0.8cm and 1.35cm,
+    box/.style={rectangle, rounded corners=3pt, draw, minimum width=1.5cm,
+                minimum height=0.6cm, font=\small, fill=white, align=center},
+    scyl/.style={cylinder, shape border rotate=90, draw, aspect=0.25,
+                 minimum width=1.4cm, minimum height=0.65cm, font=\small,
+                 fill=white, align=center},
+    sarr/.style={-{Stealth[length=4pt]}, thick},
+    derr/.style={-{Stealth[length=4pt]}, thick, dashed, color=red!65!black},
+    lbl/.style={font=\scriptsize, color=gray!55!black, align=center},
+    proxy/.style={draw=orange!70!black, dashed, rounded corners=6pt,
+                  fill=orange!6, inner sep=8pt},
+]
+
+%% ── FLOW 1: Discovery (top row) ───────────────────────────────────────────────
+\node[box, fill=blue!8]                        (ag)  {LLM\\Agent};
+\node[box, fill=gray!10,   right=2.0cm of ag]  (jw)  {JWT\\Verify};
+\node[box, fill=gray!10,   right=of jw]        (ab)  {ABAC\\Policy};
+\node[box, fill=green!10,  right=of ab]        (fi)  {Filter\\Tools};
+\node[box, fill=blue!8,    right=of fi]        (lm)  {LLM\\Context};
+
+% Below row
+\node[box,  fill=red!8,     below=1.1cm of jw] (d1) {403};
+\node[scyl, fill=yellow!10, below=1.1cm of ab] (db) {Tool\\Registry};
+\node[box,  fill=red!8,     below=1.1cm of fi] (d2) {403};
+
+% Governed Proxy bounding box (behind content)
+\begin{scope}[on background layer]
+  \node[proxy, fit=(jw)(ab)(fi)(d1)(d2)(db),
+        label={[font=\small\bfseries, text=orange!80!black,
+                fill=orange!6, inner sep=2pt]above:Governed Proxy}] (px) {};
+\end{scope}
+
+% Flow 1 arrows
+\draw[sarr] (ag)      -- node[above,lbl,pos=0.5]{list + JWT} (px.west |- ag);
+\draw[sarr] (jw)      -- node[above,lbl]{role}               (ab);
+\draw[sarr] (ab)      -- node[above,lbl]{tools}              (fi);
+\draw[sarr] (fi)      -- node[above,lbl]{filtered}           (lm);
+\draw[sarr] (ab.south) -- node[right=1pt,lbl]{query}         (db.north);
+\draw[derr] (jw.south) -- node[right=1pt,lbl,color=red!65!black]{invalid}  (d1.north);
+\draw[derr] (fi.south) -- node[right=1pt,lbl,color=red!65!black]{unauth'd} (d2.north);
+
+%% ── Horizontal divider ────────────────────────────────────────────────────────
+\draw[gray!35, dashed]
+      ([yshift=-0.85cm]db.south -| ag.west) --
+      ([yshift=-0.85cm]db.south -| lm.east);
+
+% Flow 1 label — outside proxy box, above separator
+\node[lbl] at ([yshift=-0.55cm]db.south -| d1)
+      {\textbf{(1) Tool Discovery} --- \texttt{tools/list}};
+
+%% ── FLOW 2: Invocation (bottom row) ──────────────────────────────────────────
+\node[box, fill=blue!8] at ([yshift=-2.3cm]db.south -| ag)  (ag2) {LLM\\Agent};
+\node[box, fill=gray!10,   right=2.0cm of ag2]              (ab2) {ABAC\\2nd check};
+\node[box, fill=green!10,  right=of ab2]                    (bk)  {Backend\\Tool};
+
+\node[box, fill=red!8, below=1.1cm of ab2] (d3) {403};
+
+% Governed Proxy bounding box for flow 2
+\begin{scope}[on background layer]
+  \node[proxy, fit=(ab2)(d3),
+        label={[font=\small\bfseries, text=orange!80!black,
+                fill=orange!6, inner sep=2pt]above:Governed Proxy}] (px2) {};
+\end{scope}
+
+% Flow 2 arrows
+\draw[sarr] (ag2) -- node[above,lbl,pos=0.5]{call + JWT} (px2.west |- ag2);
+\draw[sarr] (ab2) -- node[above,lbl]{allowed}            (bk);
+\draw[derr] (ab2.south) -- node[right=1pt,lbl,color=red!65!black]{unauth'd\\name} (d3.north);
+
+% Flow 2 label
+\node[lbl, below=0.18cm of d3]
+      {\textbf{(2) Tool Invocation} --- \texttt{tools/call}};
+
+\end{tikzpicture}
+\caption{Governed MCP Proxy architecture. \textbf{(1) Discovery}: the proxy verifies
+the agent's JWT, enforces ABAC policy, and queries only attribute-matching tools from the
+registry --- unauthorized tools are never returned to the model context.
+\textbf{(2) Invocation}: a second ABAC check at call time ensures hallucinated or
+injected tool names cannot bypass the discovery filter.}
+\label{fig:system}
+\end{figure*}
