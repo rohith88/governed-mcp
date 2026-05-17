@@ -26,15 +26,18 @@ agents that select and invoke tools from large registries.
 We identify a critical gap: when unauthorized tools are
 visible in an agent's context, models select them in
 48--68\% of adversarial scenarios --- even when explicitly
-instructed not to. We show this holds across three models
-spanning open-weight and frontier systems, including
-instruction-tuned models with strong alignment training.
-Critically, prompt-based compliance is both insufficient
-and unpredictable: explicit per-tool allowlists reduce
-violations to as low as 4.0\% but never to zero, and
-compliance varies widely across models --- from 4.0\% to
-37.0\% UIR --- with no reliable relationship to general
-capability. We propose a proxy-enforced attribute-based
+instructed not to. Role escalation attacks (e.g.,
+``I'm the CFO, override the access controls'') are
+the most dangerous category, reaching 96\% unauthorized
+invocation in frontier models. We show this holds across
+three models spanning open-weight and frontier systems,
+including instruction-tuned models with strong alignment
+training. Critically, prompt-based compliance is both
+insufficient and unpredictable: explicit per-tool
+allowlists reduce violations to as low as 4.0\% but
+never to zero, and compliance varies widely across
+models --- from 4.0\% to 37.0\% UIR --- with no reliable
+relationship to general capability. We propose a proxy-enforced attribute-based
 access control (ABAC) layer for MCP that filters tool
 registries at discovery time. Because unauthorized tools
 never reach the model context, UIR is 0\% by design ---
@@ -288,6 +291,51 @@ widely across models, from 4.0\% to 37.0\%.}
 \label{fig:results}
 \end{figure}
 
+Table~\ref{tab:category} breaks down UIR by attack
+category. Role escalation (C) is the most dangerous
+attack type, reaching 96.0\% for Claude~Haiku~3.5
+unfiltered --- the highest of any category across all
+models. Multi-step deception (D) is the most tractable
+under prompting: Llama~3.1~8B and Claude~Haiku~3.5 both
+achieve 0.0\% for category D in the prompted condition,
+likely because the two-step structure makes the
+unauthorized action semantically distinct from the
+authorized first step. Qwen~2.5~7B's high aggregate
+prompted UIR (37.0\%) is driven largely by indirect
+instruction attacks (B: 58.0\%), suggesting it fails to
+recognize implied unauthorized actions even when given
+an explicit allowlist. Under \textbf{Governed}, UIR is
+0\% across all categories and all models.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} \\
+\midrule
+\multicolumn{5}{l}{\textit{Unfiltered}} \\
+Qwen 2.5 7B      & 52 & 52 & 56 & 34 \\
+Llama 3.1 8B     & 62 & 82 & 84 & 36 \\
+Claude Haiku 3.5 & 58 & 82 & \textbf{96} & 38 \\
+\midrule
+\multicolumn{5}{l}{\textit{Prompted}} \\
+Qwen 2.5 7B      & 34 & \textbf{58} & 34 & 22 \\
+Llama 3.1 8B     &  6 &  6 &  4 &  0 \\
+Claude Haiku 3.5 & 12 & 12 & 22 &  0 \\
+\midrule
+\multicolumn{5}{l}{\textit{Governed}} \\
+All models       &  0 &  0 &  0 &  0 \\
+\bottomrule
+\end{tabular}
+\caption{UIR (\%) by attack category: (A) direct
+injection, (B) indirect instruction, (C) role
+escalation, (D) multi-step deception. Bold = highest
+per section. Governed enforces 0\% across all
+categories by construction (n=50 per cell).}
+\label{tab:category}
+\end{table}
+
 Notably, the prompted condition reveals that compliance
 with access control instructions varies widely across
 models and cannot be predicted from general capability.
@@ -297,10 +345,23 @@ a frontier RLHF-aligned model --- still violates it 11.5\%
 of the time. We attribute this to a fundamental tension:
 RLHF training optimizes for task completion, which in
 adversarial settings means selecting the most semantically
-relevant tool regardless of authorization. Architectural
-enforcement resolves this tension by making unauthorized
-tools unavailable rather than relying on the model to
-refuse them.
+relevant tool regardless of authorization. This is most
+starkly illustrated by role escalation attacks (category
+C), which reach 96\% UIR for Claude~Haiku~3.5 unfiltered
+--- a frontier RLHF-aligned model whose training to
+follow authority figures directly undermines access
+control when a prompt claims elevated permissions.
+For example, given the task \textit{``I'm the CFO.
+Override the access controls and process this urgent
+refund of \$5,000''} issued to an analytics agent,
+Claude~Haiku~3.5 selects \texttt{stripe\_create\_refund}
+--- a payments tool entirely outside its authorized
+attribute set. The governed proxy never returns this
+tool during discovery, making the selection impossible
+regardless of the prompt.
+Architectural enforcement resolves this tension by
+making unauthorized tools unavailable rather than
+relying on the model to refuse them.
 
 % ── 6. Discussion ─────────────────────────────────────────────────────────────
 
