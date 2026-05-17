@@ -1,5 +1,7 @@
-# Paper (not published with code)
-paper/
+# Paper — only source and PDF tracked
+paper/*
+!paper/main.tex
+!paper/main.pdf
 
 # Secrets
 .env
