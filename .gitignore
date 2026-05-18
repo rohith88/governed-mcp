@@ -2,6 +2,8 @@
 paper/*
 !paper/main.tex
 !paper/main.pdf
+!paper/main_author.tex
+!paper/main_author.pdf
 !paper/references.bib
 !paper/system_diagram.tex
 !paper/uir_results.pdf
