@@ -1,6 +1,8 @@
 # Governed MCP Proxy
 
-Artifact for the paper **"Governed MCP: Attribute-Based Access Control for LLM Tool Use"**.
+[![arXiv](https://img.shields.io/badge/arXiv-2605.18414-b31b1b.svg)](https://arxiv.org/abs/2605.18414)
+
+Artifact for the paper **"Prompts Don't Protect: Architectural Enforcement via MCP Proxy for LLM Tool Access Control"**.
 
 The proxy sits between an LLM agent and a tool registry. It enforces ABAC policy at two points: (1) tool discovery (`tools/list`) — unauthorized tools are never returned to the model context; (2) tool invocation (`tools/call`) — a second check blocks any tool the model attempts to call that it was not shown.
 
